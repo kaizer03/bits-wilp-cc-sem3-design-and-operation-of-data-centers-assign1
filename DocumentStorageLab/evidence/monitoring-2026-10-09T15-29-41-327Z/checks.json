@@ -1,0 +1,444 @@
+{
+  "run": "2026-10-09T15-29-41-327Z",
+  "checks": [
+    {
+      "name": "Prometheus scrapes both private API listeners",
+      "pass": true,
+      "targets": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "api2:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559784.181,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "api:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559784.181,
+            "1"
+          ]
+        }
+      ],
+      "apiPortsNotPublished": true,
+      "publicMetricsStatus": 404
+    },
+    {
+      "name": "Actual upload/download traffic and errors produce bounded route metrics",
+      "pass": true,
+      "counters": [
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/ready",
+            "status": "200"
+          },
+          "value": [
+            1791559796.448,
+            "13"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "POST",
+            "route": "/api/auth/login",
+            "status": "200"
+          },
+          "value": [
+            1791559796.448,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/ready",
+            "status": "200"
+          },
+          "value": [
+            1791559796.448,
+            "12"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "POST",
+            "route": "/api/auth/login",
+            "status": "200"
+          },
+          "value": [
+            1791559796.448,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "POST",
+            "route": "/api/files",
+            "status": "201"
+          },
+          "value": [
+            1791559796.448,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/files/:fid",
+            "status": "200"
+          },
+          "value": [
+            1791559796.448,
+            "12"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/files/:fid",
+            "status": "200"
+          },
+          "value": [
+            1791559796.448,
+            "12"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_requests_total",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/files/:fid",
+            "status": "400"
+          },
+          "value": [
+            1791559796.448,
+            "1"
+          ]
+        }
+      ],
+      "histogram": [
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/ready",
+            "status": "200"
+          },
+          "value": [
+            1791559796.451,
+            "13"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "POST",
+            "route": "/api/auth/login",
+            "status": "200"
+          },
+          "value": [
+            1791559796.451,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/ready",
+            "status": "200"
+          },
+          "value": [
+            1791559796.451,
+            "12"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "POST",
+            "route": "/api/auth/login",
+            "status": "200"
+          },
+          "value": [
+            1791559796.451,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "POST",
+            "route": "/api/files",
+            "status": "201"
+          },
+          "value": [
+            1791559796.451,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-1",
+            "instance": "api:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/files/:fid",
+            "status": "200"
+          },
+          "value": [
+            1791559796.451,
+            "12"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/files/:fid",
+            "status": "200"
+          },
+          "value": [
+            1791559796.451,
+            "12"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_http_request_duration_seconds_count",
+            "api_instance": "api-2",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "method": "GET",
+            "route": "/api/files/:fid",
+            "status": "400"
+          },
+          "value": [
+            1791559796.451,
+            "1"
+          ]
+        }
+      ],
+      "byteCounters": [
+        {
+          "metric": {
+            "__name__": "dodc_document_bytes_total",
+            "api_instance": "api-1",
+            "direction": "upload",
+            "instance": "api:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559796.455,
+            "48"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_document_bytes_total",
+            "api_instance": "api-1",
+            "direction": "download",
+            "instance": "api:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559796.455,
+            "576"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "dodc_document_bytes_total",
+            "api_instance": "api-2",
+            "direction": "download",
+            "instance": "api2:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559796.455,
+            "576"
+          ]
+        }
+      ],
+      "document": {
+        "fid": "6,c1340db98a",
+        "name": "metrics-2026-10-09T15-29-41-327Z.txt",
+        "bytes": 48,
+        "sha256": "ba310d14efe3ce140902e0a7ebd96f34fb57655a64dfaed44b0b8a1ad614fc1c",
+        "uploadedAt": "2026-10-09T15:29:44.192Z",
+        "documentId": "6,c1340db98a",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:29:44.192Z"
+      },
+      "documentIdsExcludedFromLabels": true
+    },
+    {
+      "name": "Provisioned Grafana dashboard is read-only and uses the local datasource",
+      "pass": true,
+      "panels": 8,
+      "canEdit": false,
+      "anonymousWriteStatus": 403,
+      "datasource": "http://prometheus:9090"
+    },
+    {
+      "name": "Stopping one API raises an availability alert while its peer serves requests",
+      "pass": true,
+      "alerts": [
+        {
+          "metric": {
+            "__name__": "ALERTS",
+            "alertname": "DocumentApiUnavailable",
+            "alertstate": "firing",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "severity": "warning"
+          },
+          "value": [
+            1791559840.544,
+            "1"
+          ]
+        }
+      ],
+      "peerStatus": 200
+    },
+    {
+      "name": "Database loss raises dependency alerts without marking live API listeners down",
+      "pass": true,
+      "alerts": [
+        {
+          "metric": {
+            "__name__": "ALERTS",
+            "alertname": "DocumentDependencyUnavailable",
+            "alertstate": "firing",
+            "api_instance": "api-1",
+            "dependency": "catalogue",
+            "instance": "api:9100",
+            "job": "document-api",
+            "severity": "warning"
+          },
+          "value": [
+            1791559887.373,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "ALERTS",
+            "alertname": "DocumentDependencyUnavailable",
+            "alertstate": "firing",
+            "api_instance": "api-2",
+            "dependency": "catalogue",
+            "instance": "api2:9100",
+            "job": "document-api",
+            "severity": "warning"
+          },
+          "value": [
+            1791559887.373,
+            "1"
+          ]
+        }
+      ],
+      "apiScrapes": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "api2:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559885.367,
+            "1"
+          ]
+        },
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "api:9100",
+            "job": "document-api"
+          },
+          "value": [
+            1791559885.367,
+            "1"
+          ]
+        }
+      ],
+      "catalogueStatus": 503
+    },
+    {
+      "name": "Alerts resolve after recovery and original content still matches its hash",
+      "pass": true,
+      "firingAlerts": 0,
+      "restoredHash": "ba310d14efe3ce140902e0a7ebd96f34fb57655a64dfaed44b0b8a1ad614fc1c"
+    }
+  ],
+  "sourceSHA256": {
+    "app/monitoring.mjs": "4116f9922376c9e35bce96010704c0703ebc21072ec377d0f4450394e131bc67",
+    "app/server.mjs": "28f038d39742b85af2611d196711e436ee45dfd9dc88266ef33adc1b51220ec3",
+    "monitoring/compose.yaml": "eeabeb094b22e92f7f57f7580561e69f2074a277ab413244eaa50ffe8ef2e498",
+    "monitoring/prometheus.yaml": "a67c187cf568b5ca5767b435a935bef7f37098dafa5e8453f6427c717b8671dd",
+    "monitoring/alerts.yaml": "785723fc78d799c1bff1aa997cbd37a1c050914ec01d48e866cec07075fb0b60",
+    "monitoring/dashboards/documents.json": "325a8ba99adb25b49bff5395c488287ae6c3a21855d1f834fd2a71fea95a927e"
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "variant": "single",
+    "service": "api",
+    "samples": 7,
+    "maxObservedCPUPercent": 51.36,
+    "maxObservedMemoryMiB": 79.93
+  },
+  {
+    "variant": "two",
+    "service": "api",
+    "samples": 5,
+    "maxObservedCPUPercent": 44.93,
+    "maxObservedMemoryMiB": 53.14
+  },
+  {
+    "variant": "two",
+    "service": "api2",
+    "samples": 5,
+    "maxObservedCPUPercent": 45.74,
+    "maxObservedMemoryMiB": 53.56
+  },
+  {
+    "variant": "single-wide",
+    "service": "api",
+    "samples": 4,
+    "maxObservedCPUPercent": 98.23,
+    "maxObservedMemoryMiB": 74.9
+  },
+  {
+    "variant": "single-tight",
+    "service": "api",
+    "samples": 16,
+    "maxObservedCPUPercent": 26.76,
+    "maxObservedMemoryMiB": 80.83
+  }
+]

@@ -1,0 +1,10 @@
+# Run as an isolated assignment-only project; volumes and data are separate.
+services:
+  api:
+    environment:
+      REPLICATION: "000"
+  api2:
+    environment:
+      REPLICATION: "000"
+  master:
+    command: ["master", "-ip=master", "-ip.bind=0.0.0.0", "-mdir=/data", "-volumeSizeLimitMB=32", "-defaultReplication=000"]

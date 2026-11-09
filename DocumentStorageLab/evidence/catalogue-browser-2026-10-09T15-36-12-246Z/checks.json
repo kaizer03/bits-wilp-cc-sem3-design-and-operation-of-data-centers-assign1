@@ -1,0 +1,43 @@
+{
+  "run": "2026-10-09T15-36-12-246Z",
+  "checks": [
+    {
+      "name": "A clean browser sees another browser's upload without receipt import",
+      "pass": true
+    },
+    {
+      "name": "Shared document has a verified text preview",
+      "pass": true
+    },
+    {
+      "name": "Cross-browser download matches original bytes",
+      "pass": true
+    },
+    {
+      "name": "Verified legacy migration preserves the original browser receipt key",
+      "pass": true
+    },
+    {
+      "name": "Migrated documents become visible in another browser",
+      "pass": true
+    },
+    {
+      "name": "Unconfirmed upload offers saved recovery receipts and verifies recovery without another upload",
+      "pass": true
+    },
+    {
+      "name": "Shared catalogue and document actions fit the mobile viewport",
+      "pass": true
+    },
+    {
+      "name": "Served frontend matches the current workspace sources",
+      "pass": true
+    }
+  ],
+  "pageErrors": [],
+  "deployedSourceSHA256": {
+    "index.html": "10e466cecf598f509fbd594881c8b83b0889652826ff25b5f8479639c98efc6d",
+    "app.js": "ebc93401e89e3da035d1648a71c1cc84b78f14672e1fe636a8bf097ca381932b",
+    "styles.css": "76a74c4701d9f396e1752a27e129aa26be0506258f701be7aa8e57c9c97c050b"
+  }
+}

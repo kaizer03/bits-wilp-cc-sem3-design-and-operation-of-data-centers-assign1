@@ -1,0 +1,10 @@
+NAME                                  IMAGE                               COMMAND                  SERVICE      CREATED              STATUS                                     PORTS
+dodc-document-lab-test-api-1          dodc-document-lab-test-api:latest   "docker-entrypoint.s…"   api          3 seconds ago        Up Less than a second (health: starting)   3000/tcp
+dodc-document-lab-test-api2-1         dodc-document-lab-test-api:latest   "docker-entrypoint.s…"   api2         About a minute ago   Up About a minute (healthy)                3000/tcp
+dodc-document-lab-test-catalogue-1    mongo:8.3.9                         "docker-entrypoint.s…"   catalogue    3 seconds ago        Up 1 second (health: starting)             27017/tcp
+dodc-document-lab-test-gateway-1      nginx:stable-alpine                 "/docker-entrypoint.…"   gateway      2 hours ago          Up 2 hours                                 127.0.0.1:18390->80/tcp
+dodc-document-lab-test-grafana-1      grafana/grafana:13.2.3              "/run.sh"                grafana      11 minutes ago       Up 11 minutes                              127.0.0.1:19382->3000/tcp
+dodc-document-lab-test-master-1       chrislusf/seaweedfs:4.48            "/entrypoint.sh mast…"   master       2 hours ago          Up 6 minutes                               7333/tcp, 8080/tcp, 8333/tcp, 8888/tcp, 9333/tcp, 18080/tcp, 18888/tcp, 19333/tcp
+dodc-document-lab-test-prometheus-1   prom/prometheus:v3.14.0             "/bin/prometheus --c…"   prometheus   11 minutes ago       Up 11 minutes                              127.0.0.1:19381->9090/tcp
+dodc-document-lab-test-volume1-1      chrislusf/seaweedfs:4.48            "/entrypoint.sh volu…"   volume1      2 hours ago          Up 6 minutes                               7333/tcp, 8080/tcp, 8333/tcp, 8888/tcp, 9333/tcp, 18080/tcp, 18888/tcp, 19333/tcp
+dodc-document-lab-test-volume2-1      chrislusf/seaweedfs:4.48            "/entrypoint.sh volu…"   volume2      2 hours ago          Up 6 minutes                               7333/tcp, 8080/tcp, 8333/tcp, 8888/tcp, 9333/tcp, 18080/tcp, 18888/tcp, 19333/tcp

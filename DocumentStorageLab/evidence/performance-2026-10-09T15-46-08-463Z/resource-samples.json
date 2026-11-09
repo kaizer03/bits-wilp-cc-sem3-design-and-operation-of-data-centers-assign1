@@ -1,0 +1,2393 @@
+[
+  {
+    "at": "2026-10-09T15:46:16.964Z",
+    "variant": "single",
+    "phase": "initial",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "49.34%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "19.99%",
+        "MemUsage": "51.18MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "13.2MB / 13.2MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 2.09MB",
+        "CPUPerc": "8.67%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "37.14%",
+        "MemUsage": "190.1MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "440kB / 473kB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "1.38%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "3.72%",
+        "MemUsage": "4.766MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "12.7MB / 12.7MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "2.20%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "24.51%",
+        "MemUsage": "62.74MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "69.9kB / 96.2kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "0.87%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "25.91%",
+        "MemUsage": "66.34MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "1.5MB / 2.45MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "2.84%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "27.55%",
+        "MemUsage": "70.53MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "1.55MB / 10.1MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:20.006Z",
+    "variant": "single",
+    "phase": "download/262144/8/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "48.76%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "19.71%",
+        "MemUsage": "50.45MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "113MB / 113MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 3.11MB",
+        "CPUPerc": "3.47%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "36.88%",
+        "MemUsage": "188.8MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "1.01MB / 1.08MB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "3.11%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "2.87%",
+        "MemUsage": "3.672MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "112MB / 113MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.30%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "25.22%",
+        "MemUsage": "64.56MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "146kB / 210kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "3.93%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "29.28%",
+        "MemUsage": "74.97MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "26.8MB / 44.1MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "2.58%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "29.50%",
+        "MemUsage": "75.51MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "26.9MB / 68.6MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:23.073Z",
+    "variant": "single",
+    "phase": "upload/1048576/8/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "50.59%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "31.22%",
+        "MemUsage": "79.93MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "225MB / 225MB",
+        "PIDs": "22"
+      },
+      {
+        "BlockIO": "0B / 3.57MB",
+        "CPUPerc": "3.90%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "36.91%",
+        "MemUsage": "189MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "1.32MB / 1.39MB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "2.71%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "3.49%",
+        "MemUsage": "4.461MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "224MB / 225MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "0.91%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "25.33%",
+        "MemUsage": "64.83MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "193kB / 272kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 43.5MB",
+        "CPUPerc": "1.11%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "29.95%",
+        "MemUsage": "76.68MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "43.7MB / 49.3MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 43.5MB",
+        "CPUPerc": "4.23%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "30.90%",
+        "MemUsage": "79.11MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "43.7MB / 141MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:26.145Z",
+    "variant": "single",
+    "phase": "upload/262144/8/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "51.36%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "21.33%",
+        "MemUsage": "54.62MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "281MB / 281MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 4.85MB",
+        "CPUPerc": "8.41%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "58.54%",
+        "MemUsage": "299.7MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "1.98MB / 2.11MB",
+        "PIDs": "108"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "3.32%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "3.30%",
+        "MemUsage": "4.219MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "314MB / 315MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.71%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "24.93%",
+        "MemUsage": "63.82MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "282kB / 404kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 43.5MB",
+        "CPUPerc": "4.29%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "33.71%",
+        "MemUsage": "86.3MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "64.9MB / 91MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 43.5MB",
+        "CPUPerc": "2.45%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "30.92%",
+        "MemUsage": "79.16MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "64.9MB / 187MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:29.185Z",
+    "variant": "single",
+    "phase": "download/1048576/1/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "47.35%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "24.88%",
+        "MemUsage": "63.7MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "437MB / 437MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 5.43MB",
+        "CPUPerc": "4.60%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "37.63%",
+        "MemUsage": "192.6MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "2.33MB / 2.47MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "2.97%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "3.24%",
+        "MemUsage": "4.145MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "435MB / 437MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "1.07%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "25.62%",
+        "MemUsage": "65.6MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "330kB / 472kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 68.8MB",
+        "CPUPerc": "0.52%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "34.12%",
+        "MemUsage": "87.34MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "86MB / 102MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 68.8MB",
+        "CPUPerc": "4.11%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "31.18%",
+        "MemUsage": "79.83MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "86MB / 295MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:32.229Z",
+    "variant": "single",
+    "phase": "download/262144/8/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "50.47%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "20.49%",
+        "MemUsage": "52.45MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "538MB / 536MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.48MB",
+        "CPUPerc": "5.96%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "37.72%",
+        "MemUsage": "193.1MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "2.92MB / 3.1MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "2.91%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "3.38%",
+        "MemUsage": "4.328MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "533MB / 536MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.60%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "24.96%",
+        "MemUsage": "63.9MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "418kB / 606kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 68.8MB",
+        "CPUPerc": "0.07%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "34.76%",
+        "MemUsage": "88.99MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "111MB / 144MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 68.8MB",
+        "CPUPerc": "2.30%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "31.93%",
+        "MemUsage": "81.75MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "111MB / 389MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:35.326Z",
+    "variant": "single",
+    "phase": "upload/1048576/8/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "46.98%",
+        "Container": "da07591eb0affe465f7949baedd5baa4486148f064b90721c26a5ba297db9bf4",
+        "ID": "da07591eb0af",
+        "MemPerc": "21.37%",
+        "MemUsage": "54.72MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-api-1",
+        "NetIO": "650MB / 649MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 7.24MB",
+        "CPUPerc": "5.46%",
+        "Container": "b13fad8c78f25199a59d8b7457cf0c0eb1bdfeb51e8aaa2955fe94aa3515e4df",
+        "ID": "b13fad8c78f2",
+        "MemPerc": "37.73%",
+        "MemUsage": "193.2MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "NetIO": "3.37MB / 3.59MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "2.92%",
+        "Container": "ce26e84c6fb1b5738e90beba15ab7e57e2531e83d5e8c3c8e8373ea4fbc2e6b7",
+        "ID": "ce26e84c6fb1",
+        "MemPerc": "3.20%",
+        "MemUsage": "4.09MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "NetIO": "646MB / 650MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.77%",
+        "Container": "3fcf227d16fb76b18f03035bde59867693998230f6934a6be9533314965d5463",
+        "ID": "3fcf227d16fb",
+        "MemPerc": "24.98%",
+        "MemUsage": "63.96MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-master-1",
+        "NetIO": "445kB / 643kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 111MB",
+        "CPUPerc": "2.06%",
+        "Container": "fa631a04125ed88ea87aa7ec26235cb37f833c3d4db6551785985a3d02b89c42",
+        "ID": "fa631a04125e",
+        "MemPerc": "34.99%",
+        "MemUsage": "89.58MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "NetIO": "128MB / 150MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 112MB",
+        "CPUPerc": "3.21%",
+        "Container": "74e6cdf027fe18f5a1c3a688de42461d9cc690ac5d21d9b74ae20513121196f6",
+        "ID": "74e6cdf027fe",
+        "MemPerc": "35.00%",
+        "MemUsage": "89.61MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "NetIO": "129MB / 494MB",
+        "PIDs": "10"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:49.317Z",
+    "variant": "two",
+    "phase": "initial",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "38.61%",
+        "Container": "27a52501d1a6bd6d22b837c812d7b67a89eba1124c94e16a77ced032954ef045",
+        "ID": "27a52501d1a6",
+        "MemPerc": "19.55%",
+        "MemUsage": "50.06MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api-1",
+        "NetIO": "17.7MB / 17.7MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "38.96%",
+        "Container": "dad7cc555adeed214e40e0ed5028ba7dc70e17858df0ff116bf5bedae084580f",
+        "ID": "dad7cc555ade",
+        "MemPerc": "19.58%",
+        "MemUsage": "50.13MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api2-1",
+        "NetIO": "17.5MB / 16.9MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 2.62MB",
+        "CPUPerc": "10.09%",
+        "Container": "a8e36f7e409b6a79357dd22caeab3b34114666e0e2f473f81d763cc041ff5639",
+        "ID": "a8e36f7e409b",
+        "MemPerc": "36.81%",
+        "MemUsage": "188.5MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-catalogue-1",
+        "NetIO": "669kB / 728kB",
+        "PIDs": "104"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "3.72%",
+        "Container": "2e528e710414af42d0b9cdbc876ff0454dd6be99d0eab4fe8ad1136350cffbb5",
+        "ID": "2e528e710414",
+        "MemPerc": "3.57%",
+        "MemUsage": "4.57MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-gateway-1",
+        "NetIO": "35.6MB / 34.7MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "2.50%",
+        "Container": "0d96b0828b45b437e262bde152649aad815743a9ef566bc9524265b245be101b",
+        "ID": "0d96b0828b45",
+        "MemPerc": "24.06%",
+        "MemUsage": "61.59MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-master-1",
+        "NetIO": "96.3kB / 142kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "2.46%",
+        "Container": "79859c919d41cb5934677c393bafa37524f686e673be5274dc3e3d17c4d78b92",
+        "ID": "79859c919d41",
+        "MemPerc": "27.59%",
+        "MemUsage": "70.64MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume1-1",
+        "NetIO": "1.44MB / 9.77MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "3.66%",
+        "Container": "60bc34c750586b72183ea126ac44e6bd3a906ae53f5c786e148b9101fe4b4be9",
+        "ID": "60bc34c75058",
+        "MemPerc": "29.63%",
+        "MemUsage": "75.85MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume2-1",
+        "NetIO": "5.74MB / 21.1MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:52.356Z",
+    "variant": "two",
+    "phase": "download/1048576/1/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "44.93%",
+        "Container": "27a52501d1a6bd6d22b837c812d7b67a89eba1124c94e16a77ced032954ef045",
+        "ID": "27a52501d1a6",
+        "MemPerc": "19.56%",
+        "MemUsage": "50.07MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api-1",
+        "NetIO": "113MB / 113MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "45.74%",
+        "Container": "dad7cc555adeed214e40e0ed5028ba7dc70e17858df0ff116bf5bedae084580f",
+        "ID": "dad7cc555ade",
+        "MemPerc": "18.27%",
+        "MemUsage": "46.78MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api2-1",
+        "NetIO": "112MB / 112MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 3.77MB",
+        "CPUPerc": "25.02%",
+        "Container": "a8e36f7e409b6a79357dd22caeab3b34114666e0e2f473f81d763cc041ff5639",
+        "ID": "a8e36f7e409b",
+        "MemPerc": "66.91%",
+        "MemUsage": "342.6MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-catalogue-1",
+        "NetIO": "1.4MB / 1.5MB",
+        "PIDs": "119"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "5.60%",
+        "Container": "2e528e710414af42d0b9cdbc876ff0454dd6be99d0eab4fe8ad1136350cffbb5",
+        "ID": "2e528e710414",
+        "MemPerc": "3.68%",
+        "MemUsage": "4.715MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-gateway-1",
+        "NetIO": "224MB / 225MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "2.11%",
+        "Container": "0d96b0828b45b437e262bde152649aad815743a9ef566bc9524265b245be101b",
+        "ID": "0d96b0828b45",
+        "MemPerc": "25.15%",
+        "MemUsage": "64.38MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-master-1",
+        "NetIO": "195kB / 287kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 43.5MB",
+        "CPUPerc": "4.47%",
+        "Container": "79859c919d41cb5934677c393bafa37524f686e673be5274dc3e3d17c4d78b92",
+        "ID": "79859c919d41",
+        "MemPerc": "29.83%",
+        "MemUsage": "76.36MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume1-1",
+        "NetIO": "43.9MB / 175MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 43.2MB",
+        "CPUPerc": "2.42%",
+        "Container": "60bc34c750586b72183ea126ac44e6bd3a906ae53f5c786e148b9101fe4b4be9",
+        "ID": "60bc34c75058",
+        "MemPerc": "29.30%",
+        "MemUsage": "75.01MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume2-1",
+        "NetIO": "43.6MB / 48MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:55.461Z",
+    "variant": "two",
+    "phase": "download/262144/8/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "43.48%",
+        "Container": "27a52501d1a6bd6d22b837c812d7b67a89eba1124c94e16a77ced032954ef045",
+        "ID": "27a52501d1a6",
+        "MemPerc": "18.63%",
+        "MemUsage": "47.69MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api-1",
+        "NetIO": "166MB / 166MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "42.99%",
+        "Container": "dad7cc555adeed214e40e0ed5028ba7dc70e17858df0ff116bf5bedae084580f",
+        "ID": "dad7cc555ade",
+        "MemPerc": "18.83%",
+        "MemUsage": "48.2MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api2-1",
+        "NetIO": "167MB / 166MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 4.87MB",
+        "CPUPerc": "6.98%",
+        "Container": "a8e36f7e409b6a79357dd22caeab3b34114666e0e2f473f81d763cc041ff5639",
+        "ID": "a8e36f7e409b",
+        "MemPerc": "37.02%",
+        "MemUsage": "189.5MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-catalogue-1",
+        "NetIO": "2.01MB / 2.16MB",
+        "PIDs": "106"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "7.38%",
+        "Container": "2e528e710414af42d0b9cdbc876ff0454dd6be99d0eab4fe8ad1136350cffbb5",
+        "ID": "2e528e710414",
+        "MemPerc": "3.71%",
+        "MemUsage": "4.746MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-gateway-1",
+        "NetIO": "332MB / 334MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.67%",
+        "Container": "0d96b0828b45b437e262bde152649aad815743a9ef566bc9524265b245be101b",
+        "ID": "0d96b0828b45",
+        "MemPerc": "24.96%",
+        "MemUsage": "63.91MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-master-1",
+        "NetIO": "273kB / 411kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 85.6MB",
+        "CPUPerc": "4.71%",
+        "Container": "79859c919d41cb5934677c393bafa37524f686e673be5274dc3e3d17c4d78b92",
+        "ID": "79859c919d41",
+        "MemPerc": "31.23%",
+        "MemUsage": "79.96MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume1-1",
+        "NetIO": "86MB / 287MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 85.6MB",
+        "CPUPerc": "2.42%",
+        "Container": "60bc34c750586b72183ea126ac44e6bd3a906ae53f5c786e148b9101fe4b4be9",
+        "ID": "60bc34c75058",
+        "MemPerc": "33.56%",
+        "MemUsage": "85.9MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume2-1",
+        "NetIO": "85.9MB / 98.9MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:46:58.503Z",
+    "variant": "two",
+    "phase": "download/4096/1/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "37.66%",
+        "Container": "27a52501d1a6bd6d22b837c812d7b67a89eba1124c94e16a77ced032954ef045",
+        "ID": "27a52501d1a6",
+        "MemPerc": "20.15%",
+        "MemUsage": "51.58MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api-1",
+        "NetIO": "269MB / 269MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "38.44%",
+        "Container": "dad7cc555adeed214e40e0ed5028ba7dc70e17858df0ff116bf5bedae084580f",
+        "ID": "dad7cc555ade",
+        "MemPerc": "18.80%",
+        "MemUsage": "48.13MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api2-1",
+        "NetIO": "270MB / 269MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.31MB",
+        "CPUPerc": "11.44%",
+        "Container": "a8e36f7e409b6a79357dd22caeab3b34114666e0e2f473f81d763cc041ff5639",
+        "ID": "a8e36f7e409b",
+        "MemPerc": "37.22%",
+        "MemUsage": "190.6MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-catalogue-1",
+        "NetIO": "2.84MB / 3.06MB",
+        "PIDs": "110"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "5.92%",
+        "Container": "2e528e710414af42d0b9cdbc876ff0454dd6be99d0eab4fe8ad1136350cffbb5",
+        "ID": "2e528e710414",
+        "MemPerc": "3.56%",
+        "MemUsage": "4.559MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-gateway-1",
+        "NetIO": "536MB / 539MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.20%",
+        "Container": "0d96b0828b45b437e262bde152649aad815743a9ef566bc9524265b245be101b",
+        "ID": "0d96b0828b45",
+        "MemPerc": "25.15%",
+        "MemUsage": "64.39MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-master-1",
+        "NetIO": "402kB / 606kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 85.6MB",
+        "CPUPerc": "4.87%",
+        "Container": "79859c919d41cb5934677c393bafa37524f686e673be5274dc3e3d17c4d78b92",
+        "ID": "79859c919d41",
+        "MemPerc": "31.09%",
+        "MemUsage": "79.6MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume1-1",
+        "NetIO": "111MB / 393MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 85.6MB",
+        "CPUPerc": "1.86%",
+        "Container": "60bc34c750586b72183ea126ac44e6bd3a906ae53f5c786e148b9101fe4b4be9",
+        "ID": "60bc34c75058",
+        "MemPerc": "34.51%",
+        "MemUsage": "88.34MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume2-1",
+        "NetIO": "111MB / 141MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:01.543Z",
+    "variant": "two",
+    "phase": "download/1048576/8/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "7.46%",
+        "Container": "27a52501d1a6bd6d22b837c812d7b67a89eba1124c94e16a77ced032954ef045",
+        "ID": "27a52501d1a6",
+        "MemPerc": "20.76%",
+        "MemUsage": "53.14MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api-1",
+        "NetIO": "326MB / 325MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "8.73%",
+        "Container": "dad7cc555adeed214e40e0ed5028ba7dc70e17858df0ff116bf5bedae084580f",
+        "ID": "dad7cc555ade",
+        "MemPerc": "20.92%",
+        "MemUsage": "53.56MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-api2-1",
+        "NetIO": "325MB / 325MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 7.67MB",
+        "CPUPerc": "0.76%",
+        "Container": "a8e36f7e409b6a79357dd22caeab3b34114666e0e2f473f81d763cc041ff5639",
+        "ID": "a8e36f7e409b",
+        "MemPerc": "37.41%",
+        "MemUsage": "191.5MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-catalogue-1",
+        "NetIO": "3.62MB / 3.91MB",
+        "PIDs": "110"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "3.94%",
+        "Container": "2e528e710414af42d0b9cdbc876ff0454dd6be99d0eab4fe8ad1136350cffbb5",
+        "ID": "2e528e710414",
+        "MemPerc": "3.79%",
+        "MemUsage": "4.852MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-gateway-1",
+        "NetIO": "647MB / 651MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "2.42%",
+        "Container": "0d96b0828b45b437e262bde152649aad815743a9ef566bc9524265b245be101b",
+        "ID": "0d96b0828b45",
+        "MemPerc": "25.27%",
+        "MemUsage": "64.69MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-master-1",
+        "NetIO": "486kB / 736kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 128MB",
+        "CPUPerc": "0.17%",
+        "Container": "79859c919d41cb5934677c393bafa37524f686e673be5274dc3e3d17c4d78b92",
+        "ID": "79859c919d41",
+        "MemPerc": "31.81%",
+        "MemUsage": "81.43MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume1-1",
+        "NetIO": "129MB / 498MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 128MB",
+        "CPUPerc": "0.22%",
+        "Container": "60bc34c750586b72183ea126ac44e6bd3a906ae53f5c786e148b9101fe4b4be9",
+        "ID": "60bc34c75058",
+        "MemPerc": "34.92%",
+        "MemUsage": "89.4MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-two-1791560800299-volume2-1",
+        "NetIO": "128MB / 148MB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:13.762Z",
+    "variant": "single-wide",
+    "phase": "initial",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "73.68%",
+        "Container": "b63de5e2d81e8a4d04544298c6cfb2c380066f4089dbd309d610ebf5b6d10271",
+        "ID": "b63de5e2d81e",
+        "MemPerc": "11.18%",
+        "MemUsage": "57.22MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-api-1",
+        "NetIO": "39.9MB / 38.9MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 2.6MB",
+        "CPUPerc": "11.38%",
+        "Container": "8acb7934fa1c3021318bd9784fd7817c3fc08b293aaae940a4f834c0de9b0a70",
+        "ID": "8acb7934fa1c",
+        "MemPerc": "37.06%",
+        "MemUsage": "189.8MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-catalogue-1",
+        "NetIO": "745kB / 797kB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "4.24%",
+        "Container": "868494cce715ecb3c165bb15da19d6f845329f67a12b02c97b572961c2113fa5",
+        "ID": "868494cce715",
+        "MemPerc": "3.59%",
+        "MemUsage": "4.602MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-gateway-1",
+        "NetIO": "38.3MB / 38.4MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "3.49%",
+        "Container": "73d8f8892dd1b12b75f49629fe78b437405394dd9506436f1e4c332dc1989b9c",
+        "ID": "73d8f8892dd1",
+        "MemPerc": "24.51%",
+        "MemUsage": "62.74MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-master-1",
+        "NetIO": "105kB / 156kB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "6.23%",
+        "Container": "8a40114cd7746df8d9c0c5704b916482db538ac7dd408af81579756bd7c44701",
+        "ID": "8a40114cd774",
+        "MemPerc": "30.90%",
+        "MemUsage": "79.11MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume1-1",
+        "NetIO": "10MB / 38.2MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "1.53%",
+        "Container": "ab048122abde3cc163e88af37a389af782845e9b87eb45378974d8f6f23e799b",
+        "ID": "ab048122abde",
+        "MemPerc": "25.58%",
+        "MemUsage": "65.49MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume2-1",
+        "NetIO": "1.41MB / 54.4kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:16.827Z",
+    "variant": "single-wide",
+    "phase": "download/1048576/1/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "98.23%",
+        "Container": "b63de5e2d81e8a4d04544298c6cfb2c380066f4089dbd309d610ebf5b6d10271",
+        "ID": "b63de5e2d81e",
+        "MemPerc": "12.04%",
+        "MemUsage": "61.62MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-api-1",
+        "NetIO": "210MB / 206MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 4.26MB",
+        "CPUPerc": "12.33%",
+        "Container": "8acb7934fa1c3021318bd9784fd7817c3fc08b293aaae940a4f834c0de9b0a70",
+        "ID": "8acb7934fa1c",
+        "MemPerc": "37.20%",
+        "MemUsage": "190.5MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-catalogue-1",
+        "NetIO": "1.78MB / 1.93MB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "8.56%",
+        "Container": "868494cce715ecb3c165bb15da19d6f845329f67a12b02c97b572961c2113fa5",
+        "ID": "868494cce715",
+        "MemPerc": "3.46%",
+        "MemUsage": "4.434MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-gateway-1",
+        "NetIO": "205MB / 206MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.52%",
+        "Container": "73d8f8892dd1b12b75f49629fe78b437405394dd9506436f1e4c332dc1989b9c",
+        "ID": "73d8f8892dd1",
+        "MemPerc": "24.37%",
+        "MemUsage": "62.39MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-master-1",
+        "NetIO": "169kB / 254kB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 43.5MB",
+        "CPUPerc": "6.56%",
+        "Container": "8a40114cd7746df8d9c0c5704b916482db538ac7dd408af81579756bd7c44701",
+        "ID": "8a40114cd774",
+        "MemPerc": "33.59%",
+        "MemUsage": "85.99MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume1-1",
+        "NetIO": "43.8MB / 195MB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 43.4MB",
+        "CPUPerc": "1.96%",
+        "Container": "ab048122abde3cc163e88af37a389af782845e9b87eb45378974d8f6f23e799b",
+        "ID": "ab048122abde",
+        "MemPerc": "28.20%",
+        "MemUsage": "72.19MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume2-1",
+        "NetIO": "43.6MB / 13.3MB",
+        "PIDs": "9"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:19.874Z",
+    "variant": "single-wide",
+    "phase": "download/1048576/1/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "59.30%",
+        "Container": "b63de5e2d81e8a4d04544298c6cfb2c380066f4089dbd309d610ebf5b6d10271",
+        "ID": "b63de5e2d81e",
+        "MemPerc": "10.72%",
+        "MemUsage": "54.87MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-api-1",
+        "NetIO": "438MB / 438MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 5.37MB",
+        "CPUPerc": "6.62%",
+        "Container": "8acb7934fa1c3021318bd9784fd7817c3fc08b293aaae940a4f834c0de9b0a70",
+        "ID": "8acb7934fa1c",
+        "MemPerc": "37.39%",
+        "MemUsage": "191.4MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-catalogue-1",
+        "NetIO": "2.42MB / 2.62MB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "3.81%",
+        "Container": "868494cce715ecb3c165bb15da19d6f845329f67a12b02c97b572961c2113fa5",
+        "ID": "868494cce715",
+        "MemPerc": "3.12%",
+        "MemUsage": "3.992MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-gateway-1",
+        "NetIO": "436MB / 438MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.54%",
+        "Container": "73d8f8892dd1b12b75f49629fe78b437405394dd9506436f1e4c332dc1989b9c",
+        "ID": "73d8f8892dd1",
+        "MemPerc": "24.32%",
+        "MemUsage": "62.26MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-master-1",
+        "NetIO": "290kB / 443kB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 85.7MB",
+        "CPUPerc": "3.61%",
+        "Container": "8a40114cd7746df8d9c0c5704b916482db538ac7dd408af81579756bd7c44701",
+        "ID": "8a40114cd774",
+        "MemPerc": "39.93%",
+        "MemUsage": "102.2MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume1-1",
+        "NetIO": "86.5MB / 410MB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 85.7MB",
+        "CPUPerc": "0.52%",
+        "Container": "ab048122abde3cc163e88af37a389af782845e9b87eb45378974d8f6f23e799b",
+        "ID": "ab048122abde",
+        "MemPerc": "28.69%",
+        "MemUsage": "73.45MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume2-1",
+        "NetIO": "86.1MB / 24.8MB",
+        "PIDs": "9"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:22.951Z",
+    "variant": "single-wide",
+    "phase": "upload/1048576/1/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "95.49%",
+        "Container": "b63de5e2d81e8a4d04544298c6cfb2c380066f4089dbd309d610ebf5b6d10271",
+        "ID": "b63de5e2d81e",
+        "MemPerc": "14.63%",
+        "MemUsage": "74.9MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-api-1",
+        "NetIO": "574MB / 568MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.73MB",
+        "CPUPerc": "21.97%",
+        "Container": "8acb7934fa1c3021318bd9784fd7817c3fc08b293aaae940a4f834c0de9b0a70",
+        "ID": "8acb7934fa1c",
+        "MemPerc": "67.03%",
+        "MemUsage": "343.2MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-catalogue-1",
+        "NetIO": "3.21MB / 3.48MB",
+        "PIDs": "113"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "6.42%",
+        "Container": "868494cce715ecb3c165bb15da19d6f845329f67a12b02c97b572961c2113fa5",
+        "ID": "868494cce715",
+        "MemPerc": "3.79%",
+        "MemUsage": "4.855MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-gateway-1",
+        "NetIO": "646MB / 650MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.85%",
+        "Container": "73d8f8892dd1b12b75f49629fe78b437405394dd9506436f1e4c332dc1989b9c",
+        "ID": "73d8f8892dd1",
+        "MemPerc": "25.94%",
+        "MemUsage": "66.4MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-master-1",
+        "NetIO": "427kB / 658kB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 128MB",
+        "CPUPerc": "6.09%",
+        "Container": "8a40114cd7746df8d9c0c5704b916482db538ac7dd408af81579756bd7c44701",
+        "ID": "8a40114cd774",
+        "MemPerc": "40.76%",
+        "MemUsage": "104.3MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume1-1",
+        "NetIO": "129MB / 612MB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 124MB",
+        "CPUPerc": "1.65%",
+        "Container": "ab048122abde3cc163e88af37a389af782845e9b87eb45378974d8f6f23e799b",
+        "ID": "ab048122abde",
+        "MemPerc": "29.21%",
+        "MemUsage": "74.79MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-wide-1791560825573-volume2-1",
+        "NetIO": "128MB / 32.2MB",
+        "PIDs": "9"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:35.994Z",
+    "variant": "single-tight",
+    "phase": "initial",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.06%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "31.15%",
+        "MemUsage": "39.87MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "12.1MB / 12.1MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 1.56MB",
+        "CPUPerc": "3.27%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "36.97%",
+        "MemUsage": "189.3MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "129kB / 119kB",
+        "PIDs": "94"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "1.81%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "2.64%",
+        "MemUsage": "3.383MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "12.1MB / 12.1MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "1.49%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.19%",
+        "MemUsage": "64.49MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "30.6kB / 32.5kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "1.90%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "27.53%",
+        "MemUsage": "70.48MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "1.43MB / 12MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "0.47%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "26.04%",
+        "MemUsage": "66.67MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "1.4MB / 17.1kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:39.033Z",
+    "variant": "single-tight",
+    "phase": "upload/4096/8/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.80%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "38.29%",
+        "MemUsage": "49.01MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "13.1MB / 13.1MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 2.24MB",
+        "CPUPerc": "3.49%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.03%",
+        "MemUsage": "189.6MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "556kB / 574kB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "1.46%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.25%",
+        "MemUsage": "4.156MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "19.2MB / 19.3MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "0.94%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.30%",
+        "MemUsage": "64.77MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "89.3kB / 116kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "1.95%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "27.75%",
+        "MemUsage": "71.04MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "5.79MB / 19MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "0.75%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "26.07%",
+        "MemUsage": "66.74MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "5.7MB / 34.6kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:42.073Z",
+    "variant": "single-tight",
+    "phase": "upload/262144/8/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.93%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "58.80%",
+        "MemUsage": "75.27MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "61.3MB / 60.2MB",
+        "PIDs": "19"
+      },
+      {
+        "BlockIO": "0B / 2.81MB",
+        "CPUPerc": "2.49%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "36.97%",
+        "MemUsage": "189.3MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "897kB / 944kB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "1.79%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.39%",
+        "MemUsage": "4.336MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "60.5MB / 60.7MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "0.44%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "24.82%",
+        "MemUsage": "63.54MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "135kB / 184kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "1.32%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "30.85%",
+        "MemUsage": "78.97MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "14.3MB / 59MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "0.30%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "25.75%",
+        "MemUsage": "65.92MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "9.91MB / 47.5kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:45.178Z",
+    "variant": "single-tight",
+    "phase": "upload/1048576/1/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "23.49%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "41.65%",
+        "MemUsage": "53.32MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "101MB / 101MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 3MB",
+        "CPUPerc": "15.23%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "66.12%",
+        "MemUsage": "338.5MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "1MB / 1.05MB",
+        "PIDs": "113"
+      },
+      {
+        "BlockIO": "0B / 8.19kB",
+        "CPUPerc": "1.42%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.29%",
+        "MemUsage": "4.211MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "100MB / 101MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 16.4kB",
+        "CPUPerc": "0.45%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "24.92%",
+        "MemUsage": "63.79MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "153kB / 205kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "1.61%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "30.95%",
+        "MemUsage": "79.24MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "26.9MB / 83.2MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 28.7kB",
+        "CPUPerc": "0.56%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "26.00%",
+        "MemUsage": "66.55MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "26.7MB / 81.2kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:48.225Z",
+    "variant": "single-tight",
+    "phase": "download/1048576/1/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "26.76%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "57.83%",
+        "MemUsage": "74.02MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "157MB / 157MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 3.38MB",
+        "CPUPerc": "2.32%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.03%",
+        "MemUsage": "189.6MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "1.13MB / 1.18MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "3.14%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "2.65%",
+        "MemUsage": "3.387MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "156MB / 157MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.84%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.02%",
+        "MemUsage": "64.05MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "174kB / 233kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "3.23%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "31.40%",
+        "MemUsage": "80.38MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "43.8MB / 156MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "0.10%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "26.00%",
+        "MemUsage": "66.56MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "26.7MB / 81.2kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:51.267Z",
+    "variant": "single-tight",
+    "phase": "download/1048576/8/1",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "25.49%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "45.79%",
+        "MemUsage": "58.61MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "215MB / 213MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 3.59MB",
+        "CPUPerc": "26.75%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.12%",
+        "MemUsage": "190.1MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "1.28MB / 1.34MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "1.55%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.35%",
+        "MemUsage": "4.289MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "212MB / 213MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.39%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "24.94%",
+        "MemUsage": "63.84MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "194kB / 260kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "1.41%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "32.21%",
+        "MemUsage": "82.47MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "43.8MB / 191MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "0.09%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "26.86%",
+        "MemUsage": "68.77MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "43.6MB / 111kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:54.372Z",
+    "variant": "single-tight",
+    "phase": "download/4096/8/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "25.92%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "45.84%",
+        "MemUsage": "58.68MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "243MB / 243MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 4.19MB",
+        "CPUPerc": "3.58%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.08%",
+        "MemUsage": "189.8MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "1.66MB / 1.74MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "1.74%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.43%",
+        "MemUsage": "4.391MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "241MB / 243MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.97%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "24.93%",
+        "MemUsage": "63.82MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "248kB / 336kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "1.95%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "36.77%",
+        "MemUsage": "94.14MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "48.2MB / 240MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "0.48%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.48%",
+        "MemUsage": "70.35MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "46.3MB / 126kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:47:57.425Z",
+    "variant": "single-tight",
+    "phase": "download/262144/8/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "23.75%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "43.08%",
+        "MemUsage": "55.14MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "292MB / 291MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 4.68MB",
+        "CPUPerc": "1.97%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.09%",
+        "MemUsage": "189.9MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "1.97MB / 2.05MB",
+        "PIDs": "102"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "2.36%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.77%",
+        "MemUsage": "4.82MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "274MB / 275MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.60%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.14%",
+        "MemUsage": "64.36MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "291kB / 394kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 58.3MB",
+        "CPUPerc": "2.10%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.83%",
+        "MemUsage": "104.5MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "69.3MB / 289MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 26.7MB",
+        "CPUPerc": "0.67%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.37%",
+        "MemUsage": "70.06MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "58.4MB / 150kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:00.467Z",
+    "variant": "single-tight",
+    "phase": "download/1048576/1/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "23.82%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "44.16%",
+        "MemUsage": "56.52MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "323MB / 322MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 4.81MB",
+        "CPUPerc": "1.89%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.18%",
+        "MemUsage": "190.4MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "2.04MB / 2.13MB",
+        "PIDs": "101"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "1.42%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "2.88%",
+        "MemUsage": "3.684MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "320MB / 322MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.42%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.14%",
+        "MemUsage": "64.37MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "302kB / 409kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 58.3MB",
+        "CPUPerc": "1.01%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.54%",
+        "MemUsage": "103.8MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "69.3MB / 333MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 67.8MB",
+        "CPUPerc": "0.11%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.26%",
+        "MemUsage": "69.79MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "68.9MB / 166kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:03.542Z",
+    "variant": "single-tight",
+    "phase": "download/1048576/1/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "26.58%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "56.94%",
+        "MemUsage": "72.89MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "401MB / 396MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 5.08MB",
+        "CPUPerc": "2.30%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.56%",
+        "MemUsage": "192.3MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "2.23MB / 2.32MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "2.28%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "2.99%",
+        "MemUsage": "3.828MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "394MB / 396MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.31%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.06%",
+        "MemUsage": "64.15MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "330kB / 447kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 58.3MB",
+        "CPUPerc": "2.94%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.67%",
+        "MemUsage": "104.1MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "86.2MB / 373MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 67.8MB",
+        "CPUPerc": "0.09%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.34%",
+        "MemUsage": "70MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "85.7MB / 197kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:06.625Z",
+    "variant": "single-tight",
+    "phase": "download/1048576/8/2",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.35%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "40.76%",
+        "MemUsage": "52.18MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "437MB / 437MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 5.41MB",
+        "CPUPerc": "3.38%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.77%",
+        "MemUsage": "193.4MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "2.4MB / 2.49MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "0.74%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.17%",
+        "MemUsage": "4.059MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "418MB / 420MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.34%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "24.95%",
+        "MemUsage": "63.88MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "338kB / 458kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 58.3MB",
+        "CPUPerc": "1.96%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.97%",
+        "MemUsage": "104.9MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "86.4MB / 434MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 67.8MB",
+        "CPUPerc": "0.12%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.44%",
+        "MemUsage": "70.24MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "85.7MB / 200kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:09.672Z",
+    "variant": "single-tight",
+    "phase": "download/262144/1/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.80%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "49.40%",
+        "MemUsage": "63.23MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "482MB / 481MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.31MB",
+        "CPUPerc": "4.29%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.92%",
+        "MemUsage": "194.1MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "2.91MB / 3.05MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "1.88%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.62%",
+        "MemUsage": "4.633MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "479MB / 481MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "1.50%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.86%",
+        "MemUsage": "66.2MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "421kB / 583kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 90MB",
+        "CPUPerc": "2.62%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.35%",
+        "MemUsage": "103.3MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "95.9MB / 477MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 67.8MB",
+        "CPUPerc": "0.67%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.51%",
+        "MemUsage": "70.43MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "94.2MB / 227kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:12.724Z",
+    "variant": "single-tight",
+    "phase": "upload/1048576/1/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "25.07%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "43.29%",
+        "MemUsage": "55.41MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "529MB / 529MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.45MB",
+        "CPUPerc": "2.12%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "37.86%",
+        "MemUsage": "193.8MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "3MB / 3.12MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "1.76%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.38%",
+        "MemUsage": "4.328MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "526MB / 529MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.48%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.66%",
+        "MemUsage": "65.7MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "440kB / 606kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 90MB",
+        "CPUPerc": "1.36%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.85%",
+        "MemUsage": "104.6MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "112MB / 524MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 110MB",
+        "CPUPerc": "0.07%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.62%",
+        "MemUsage": "70.7MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "111MB / 253kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:15.831Z",
+    "variant": "single-tight",
+    "phase": "download/1048576/1/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.13%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "46.26%",
+        "MemUsage": "59.22MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "561MB / 559MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.75MB",
+        "CPUPerc": "2.47%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "38.20%",
+        "MemUsage": "195.6MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "3.13MB / 3.28MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "1.22%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "2.90%",
+        "MemUsage": "3.711MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "556MB / 559MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.56%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "26.15%",
+        "MemUsage": "66.94MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "458kB / 629kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 90MB",
+        "CPUPerc": "0.95%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "40.71%",
+        "MemUsage": "104.2MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "112MB / 556MB",
+        "PIDs": "8"
+      },
+      {
+        "BlockIO": "0B / 110MB",
+        "CPUPerc": "0.06%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.71%",
+        "MemUsage": "70.93MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "111MB / 254kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:18.878Z",
+    "variant": "single-tight",
+    "phase": "upload/1048576/8/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.92%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "63.15%",
+        "MemUsage": "80.83MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "633MB / 627MB",
+        "PIDs": "11"
+      },
+      {
+        "BlockIO": "0B / 6.94MB",
+        "CPUPerc": "21.29%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "38.26%",
+        "MemUsage": "195.9MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "3.29MB / 3.43MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "2.06%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "3.32%",
+        "MemUsage": "4.25MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "624MB / 627MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.45%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.86%",
+        "MemUsage": "66.2MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "479kB / 657kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 126MB",
+        "CPUPerc": "1.68%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "41.50%",
+        "MemUsage": "106.2MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "129MB / 600MB",
+        "PIDs": "10"
+      },
+      {
+        "BlockIO": "0B / 110MB",
+        "CPUPerc": "0.09%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.79%",
+        "MemUsage": "71.14MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "128MB / 286kB",
+        "PIDs": "8"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-09T15:48:21.921Z",
+    "variant": "single-tight",
+    "phase": "download/4096/1/3",
+    "containers": [
+      {
+        "BlockIO": "0B / 0B",
+        "CPUPerc": "24.97%",
+        "Container": "daaf6b189f5d305859f4468bff01c4f95d4dd74cc8750656dba4718155dff72d",
+        "ID": "daaf6b189f5d",
+        "MemPerc": "46.97%",
+        "MemUsage": "60.12MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "NetIO": "651MB / 650MB",
+        "PIDs": "17"
+      },
+      {
+        "BlockIO": "0B / 7.67MB",
+        "CPUPerc": "0.66%",
+        "Container": "0eb9f55b5b448e4c31f374b8b3cc007712813d0b3a86e1aaaeb88a6636a5ee3f",
+        "ID": "0eb9f55b5b44",
+        "MemPerc": "38.11%",
+        "MemUsage": "195.1MiB / 512MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "NetIO": "3.72MB / 3.9MB",
+        "PIDs": "98"
+      },
+      {
+        "BlockIO": "0B / 12.3kB",
+        "CPUPerc": "0.00%",
+        "Container": "fb4fa3029eb3202f8b63d35874f990784fa73477f2429b77b9230e14333e71da",
+        "ID": "fb4fa3029eb3",
+        "MemPerc": "2.25%",
+        "MemUsage": "2.875MiB / 128MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "NetIO": "647MB / 650MB",
+        "PIDs": "2"
+      },
+      {
+        "BlockIO": "0B / 20.5kB",
+        "CPUPerc": "0.16%",
+        "Container": "7d52cbe67efb986fccfeab4e49e376d4a5e4efd8cb190dbb1b31f1737de6dd5c",
+        "ID": "7d52cbe67efb",
+        "MemPerc": "25.68%",
+        "MemUsage": "65.75MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "NetIO": "535kB / 743kB",
+        "PIDs": "9"
+      },
+      {
+        "BlockIO": "0B / 126MB",
+        "CPUPerc": "0.09%",
+        "Container": "e83122456d3ab74f02db7c4d747bafa86c568d3dfa645ac8b30a8f83b27086e7",
+        "ID": "e83122456d3a",
+        "MemPerc": "41.61%",
+        "MemUsage": "106.5MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "NetIO": "129MB / 645MB",
+        "PIDs": "10"
+      },
+      {
+        "BlockIO": "0B / 110MB",
+        "CPUPerc": "0.30%",
+        "Container": "17bd0d8531c8de03b7bff921079bd41e3598424c5803a96530026d67188ae9b9",
+        "ID": "17bd0d8531c8",
+        "MemPerc": "27.80%",
+        "MemUsage": "71.18MiB / 256MiB",
+        "Name": "dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "NetIO": "128MB / 301kB",
+        "PIDs": "8"
+      }
+    ]
+  }
+]

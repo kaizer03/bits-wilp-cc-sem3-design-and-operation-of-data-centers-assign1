@@ -1,0 +1,122 @@
+name: dodc-document-lab
+x-storage: &storage
+  image: chrislusf/seaweedfs:4.48
+  restart: unless-stopped
+  networks: [storage]
+  cpus: 0.5
+  mem_limit: 256m
+services:
+  gateway:
+    image: nginx:stable-alpine
+    ports: ["127.0.0.1:${LAB_HTTP_PORT:-18380}:80"]
+    volumes: ["./nginx.conf:/etc/nginx/nginx.conf:ro"]
+    networks: [front]
+    restart: unless-stopped
+    cpus: 0.25
+    mem_limit: 128m
+    depends_on: [api, api2]
+  api: &api
+    build: ./app
+    image: dodc-document-lab-api:latest
+    environment: &api-environment
+      API_INSTANCE: api-1
+      MASTER_URL: http://master:9333
+      REPLICATION: "001"
+      MONGO_URL: mongodb://catalogue:27017/dodc_documents?replicaSet=rs0&authSource=dodc_documents
+      MONGO_PASSWORD_FILE: /run/secrets/mongo_app_password
+    secrets: [mongo_app_password]
+    networks: [front, storage, metadata, monitoring]
+    restart: unless-stopped
+    cpus: 0.5
+    mem_limit: 256m
+    depends_on:
+      master: {condition: service_started}
+      volume1: {condition: service_started}
+      volume2: {condition: service_started}
+      catalogue-init: {condition: service_completed_successfully}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000/api/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 7s
+      retries: 6
+  api2:
+    <<: *api
+    environment:
+      <<: *api-environment
+      API_INSTANCE: api-2
+  catalogue-key-init:
+    image: mongo:8.3.9
+    entrypoint: ["sh", "-c", "cp /run/secrets/mongo_keyfile /key/keyfile && chown 999:999 /key/keyfile && chmod 400 /key/keyfile"]
+    secrets: [mongo_keyfile]
+    volumes: ["catalogue-key:/key"]
+    networks: [metadata]
+    restart: "no"
+    cpus: 0.25
+    mem_limit: 128m
+  catalogue:
+    image: mongo:8.3.9
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--keyFile", "/key/keyfile"]
+    networks: [metadata]
+    volumes: ["catalogue-data:/data/db", "catalogue-key:/key:ro"]
+    depends_on:
+      catalogue-key-init: {condition: service_completed_successfully}
+    restart: unless-stopped
+    cpus: 0.5
+    mem_limit: 512m
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "quit(db.hello().isWritablePrimary ? 0 : 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  catalogue-init:
+    image: mongo:8.3.9
+    entrypoint: ["mongosh", "--quiet", "--host", "127.0.0.1", "/init-replica.js"]
+    network_mode: "service:catalogue"
+    secrets: [mongo_admin_password, mongo_app_password]
+    volumes: ["./init-replica.js:/init-replica.js:ro"]
+    depends_on: [catalogue]
+    restart: "no"
+    cpus: 0.25
+    mem_limit: 256m
+  master:
+    <<: *storage
+    command: ["master", "-ip=master", "-ip.bind=0.0.0.0", "-mdir=/data", "-volumeSizeLimitMB=32", "-defaultReplication=001"]
+    volumes: ["master-data:/data"]
+  volume1:
+    <<: *storage
+    command: ["volume", "-ip=volume1", "-ip.bind=0.0.0.0", "-port=8080", "-master=master:9333", "-dir=/data", "-max=8", "-dataCenter=lab", "-rack=rack1"]
+    volumes: ["volume1-data:/data"]
+    depends_on: [master]
+  volume2:
+    <<: *storage
+    command: ["volume", "-ip=volume2", "-ip.bind=0.0.0.0", "-port=8080", "-master=master:9333", "-dir=/data", "-max=8", "-dataCenter=lab", "-rack=rack1"]
+    volumes: ["volume2-data:/data"]
+    depends_on: [master]
+  volume3:
+    <<: *storage
+    profiles: [expand]
+    command: ["volume", "-ip=volume3", "-ip.bind=0.0.0.0", "-port=8080", "-master=master:9333", "-dir=/data", "-max=8", "-dataCenter=lab", "-rack=rack1"]
+    volumes: ["volume3-data:/data"]
+    depends_on: [master]
+networks:
+  front: {}
+  storage:
+    internal: true
+  metadata:
+    internal: true
+  monitoring:
+    internal: true
+volumes:
+  master-data: {}
+  volume1-data: {}
+  volume2-data: {}
+  volume3-data: {}
+  catalogue-data: {}
+  catalogue-key: {}
+secrets:
+  mongo_keyfile:
+    file: ./.local/secrets/mongo_keyfile
+  mongo_admin_password:
+    file: ./.local/secrets/mongo_admin_password
+  mongo_app_password:
+    file: ./.local/secrets/mongo_app_password

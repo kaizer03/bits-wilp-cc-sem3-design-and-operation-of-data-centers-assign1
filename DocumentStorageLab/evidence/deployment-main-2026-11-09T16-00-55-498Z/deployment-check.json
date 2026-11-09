@@ -1,0 +1,128 @@
+{
+  "at": "2026-11-09T16:00:56.047Z",
+  "checks": [
+    {
+      "service": "api",
+      "file": "server.mjs",
+      "pass": true,
+      "sha256": "02f5d831ca5ee665398e51cd4aca3d7b52d166581dfa0bb669b45354dbccef8c"
+    },
+    {
+      "service": "api",
+      "file": "catalogue.mjs",
+      "pass": true,
+      "sha256": "8833d7fd65e9d181d575a5c1a40488da33483e71fcc674640987f8441ec7f858"
+    },
+    {
+      "service": "api",
+      "file": "auth.mjs",
+      "pass": true,
+      "sha256": "77a5408566ef41ecd1b17f60b38ae482f7b698ee4b96c8caa520bfadde14126a"
+    },
+    {
+      "service": "api",
+      "file": "database.mjs",
+      "pass": true,
+      "sha256": "6364d78a77549ce7f836f91d3cd5d44eb28747c0c1ed24b1c3c60543143169a5"
+    },
+    {
+      "service": "api",
+      "file": "monitoring.mjs",
+      "pass": true,
+      "sha256": "4116f9922376c9e35bce96010704c0703ebc21072ec377d0f4450394e131bc67"
+    },
+    {
+      "service": "api",
+      "file": "package.json",
+      "pass": true,
+      "sha256": "e43ac23cea5a472dd99a054a49401a0c318625754674f0f701e0d8bf11d552cd"
+    },
+    {
+      "service": "api",
+      "file": "package-lock.json",
+      "pass": true,
+      "sha256": "44f657c390d69461589b2d83437a105c0a76cd85ef40d4662480f1cbbda1d6d4"
+    },
+    {
+      "service": "api2",
+      "file": "server.mjs",
+      "pass": true,
+      "sha256": "02f5d831ca5ee665398e51cd4aca3d7b52d166581dfa0bb669b45354dbccef8c"
+    },
+    {
+      "service": "api2",
+      "file": "catalogue.mjs",
+      "pass": true,
+      "sha256": "8833d7fd65e9d181d575a5c1a40488da33483e71fcc674640987f8441ec7f858"
+    },
+    {
+      "service": "api2",
+      "file": "auth.mjs",
+      "pass": true,
+      "sha256": "77a5408566ef41ecd1b17f60b38ae482f7b698ee4b96c8caa520bfadde14126a"
+    },
+    {
+      "service": "api2",
+      "file": "database.mjs",
+      "pass": true,
+      "sha256": "6364d78a77549ce7f836f91d3cd5d44eb28747c0c1ed24b1c3c60543143169a5"
+    },
+    {
+      "service": "api2",
+      "file": "monitoring.mjs",
+      "pass": true,
+      "sha256": "4116f9922376c9e35bce96010704c0703ebc21072ec377d0f4450394e131bc67"
+    },
+    {
+      "service": "api2",
+      "file": "package.json",
+      "pass": true,
+      "sha256": "e43ac23cea5a472dd99a054a49401a0c318625754674f0f701e0d8bf11d552cd"
+    },
+    {
+      "service": "api2",
+      "file": "package-lock.json",
+      "pass": true,
+      "sha256": "44f657c390d69461589b2d83437a105c0a76cd85ef40d4662480f1cbbda1d6d4"
+    },
+    {
+      "file": "index.html",
+      "pass": true,
+      "sha256": "1283fa46fa965d572beb2ac32ee6b87c690a454c473c1752946f84adb81cd67f"
+    },
+    {
+      "file": "app.js",
+      "pass": true,
+      "sha256": "ebc93401e89e3da035d1648a71c1cc84b78f14672e1fe636a8bf097ca381932b"
+    },
+    {
+      "file": "styles.css",
+      "pass": true,
+      "sha256": "be4665b52f8fa887f2f6694b6988d31e58d7162a906fab3c42dac8aaeda693f5"
+    },
+    {
+      "file": "pdf-preview.mjs",
+      "pass": true,
+      "sha256": "286ccb49f9bf96eb13c6d17e6fe58f07080bd49ee9ceff0d1c51efd48e69717e"
+    },
+    {
+      "file": "favicon.svg",
+      "pass": true,
+      "sha256": "cc6fdbe43e59c997c2a6e052fce9d61a9e89a206aa403755a44e09a5094630dc"
+    }
+  ],
+  "instances": [
+    "api-2",
+    "api-1"
+  ],
+  "originalSamplesVerified": 3,
+  "ready": {
+    "status": "ready",
+    "instance": "api-1",
+    "catalogueReady": true,
+    "coordinatorReachable": true,
+    "reachableStorageServices": 3,
+    "requestedCopies": 2,
+    "writeServiceCountSatisfied": true
+  }
+}

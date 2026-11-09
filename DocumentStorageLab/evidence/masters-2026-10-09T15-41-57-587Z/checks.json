@@ -1,0 +1,193 @@
+{
+  "run": "2026-10-09T15-41-57-587Z",
+  "project": "dodc-document-lab-masters-1791560517588",
+  "checks": [
+    {
+      "name": "Three master peers agree on one leader and replicated content is readable",
+      "pass": true,
+      "status": [
+        {
+          "name": "master",
+          "status": 200,
+          "Leader": "master2:9333.19333",
+          "Peers": [
+            "master3:9333.19333",
+            "master2:9333.19333"
+          ]
+        },
+        {
+          "name": "master2",
+          "status": 200,
+          "IsLeader": true,
+          "Leader": "master2:9333.19333",
+          "Peers": [
+            "master:9333.19333",
+            "master3:9333.19333"
+          ]
+        },
+        {
+          "name": "master3",
+          "status": 200,
+          "Leader": "master2:9333.19333",
+          "Peers": [
+            "master:9333.19333",
+            "master2:9333.19333"
+          ]
+        }
+      ],
+      "document": {
+        "fid": "4,013fc6ffc8",
+        "name": "masters-original.txt",
+        "bytes": 40,
+        "sha256": "dfbfb913a9be952f54b6ef91f0ceac12e1157b4b47df6522dd62bb8c9f3c9f2c",
+        "uploadedAt": "2026-10-09T15:42:09.392Z",
+        "documentId": "4,013fc6ffc8",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:42:09.392Z"
+      },
+      "leader": "master2"
+    },
+    {
+      "name": "Leader loss elects a survivor and the same API configuration recovers reads and writes",
+      "pass": true,
+      "stopped": "master2",
+      "newLeader": "master",
+      "readAndNewLeaderObservedAfterMs": 14729.929167,
+      "firstSuccessfulReadAfterMs": 191.66633399999955,
+      "probes": [
+        {
+          "afterMs": 191.66633399999955,
+          "status": 200
+        },
+        {
+          "afterMs": 1435.1663750000007,
+          "status": 200
+        },
+        {
+          "afterMs": 2725.4182500000006,
+          "status": 200
+        },
+        {
+          "afterMs": 4117.462667,
+          "status": 200
+        },
+        {
+          "afterMs": 5423.343708999999,
+          "status": 200
+        },
+        {
+          "afterMs": 6731.2548750000005,
+          "status": 200
+        },
+        {
+          "afterMs": 8024.046833999999,
+          "status": 200
+        },
+        {
+          "afterMs": 9329.962542,
+          "status": 200
+        },
+        {
+          "afterMs": 10634.35,
+          "status": 200
+        },
+        {
+          "afterMs": 11918.937959,
+          "status": 200
+        },
+        {
+          "afterMs": 13217.434167000001,
+          "status": 200
+        },
+        {
+          "afterMs": 14729.929167,
+          "status": 200
+        }
+      ],
+      "newWriteStatus": 201,
+      "mastersReconfigured": false
+    },
+    {
+      "name": "Losing two peers prevents fresh allocation; existing bytes remain on storage services",
+      "pass": true,
+      "stopped": [
+        "master2",
+        "master3"
+      ],
+      "states": [
+        {
+          "name": "master",
+          "status": 200,
+          "IsLeader": true,
+          "Leader": "master:9333.19333",
+          "Peers": [
+            "master3:9333.19333",
+            "master2:9333.19333"
+          ],
+          "MaxVolumeId": 6
+        },
+        {
+          "name": "master2",
+          "error": "TypeError"
+        },
+        {
+          "name": "master3",
+          "error": "TypeError"
+        }
+      ],
+      "freshCollectionAssignment": {
+        "error": "TimeoutError"
+      },
+      "applicationExistingReadStatus": 200,
+      "applicationExistingCollectionUploadStatus": 201,
+      "cachedPlacementBehaviourMeasured": true,
+      "directStoredContent": {
+        "status": 200,
+        "sha256": "dfbfb913a9be952f54b6ef91f0ceac12e1157b4b47df6522dd62bb8c9f3c9f2c"
+      }
+    },
+    {
+      "name": "Restoring peers recovers a single leader and preserves original content",
+      "pass": true,
+      "states": [
+        {
+          "name": "master",
+          "status": 200,
+          "IsLeader": true,
+          "Leader": "master:9333.19333",
+          "Peers": [
+            "master3:9333.19333",
+            "master2:9333.19333"
+          ],
+          "MaxVolumeId": 6
+        },
+        {
+          "name": "master2",
+          "status": 200,
+          "Peers": [
+            "master:9333.19333",
+            "master3:9333.19333"
+          ]
+        },
+        {
+          "name": "master3",
+          "status": 200,
+          "Peers": [
+            "master:9333.19333",
+            "master2:9333.19333"
+          ]
+        }
+      ],
+      "originalSHA256": "dfbfb913a9be952f54b6ef91f0ceac12e1157b4b47df6522dd62bb8c9f3c9f2c"
+    }
+  ],
+  "sourceSHA256": {
+    "app/server.mjs": "02f5d831ca5ee665398e51cd4aca3d7b52d166581dfa0bb669b45354dbccef8c",
+    "experiments/masters/compose.yaml": "bdcf0c534544353fac57a0da50c0d2bdfe8ac4f9a8bb56c3a8f09ae335c7a2ce",
+    "tests/masters-integration.mjs": "3504c52b27f026551012953e63076a97658e2b2e66b29ea2df70ad15c3643872"
+  },
+  "logicalPeersOnOneHost": true
+}

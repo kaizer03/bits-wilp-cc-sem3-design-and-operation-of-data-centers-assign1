@@ -1,0 +1,1 @@
+Mozilla PDF.js 6.4.299, Apache-2.0. Downloaded from the official npm pdfjs-dist tarball and verified using its published SHA-512 integrity. Bundled browser modules, fonts, character maps and WASM assets; no external CDN requests. Source: https://github.com/mozilla/pdf.js

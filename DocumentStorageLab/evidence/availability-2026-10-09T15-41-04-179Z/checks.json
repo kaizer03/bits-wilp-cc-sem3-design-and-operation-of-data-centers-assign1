@@ -1,0 +1,174 @@
+{
+  "run": "2026-10-09T15-41-04-179Z",
+  "checks": [
+    {
+      "name": "Round-robin requests reach both API instances",
+      "pass": true,
+      "counts": {
+        "api-2": 11,
+        "api-1": 9
+      }
+    },
+    {
+      "name": "One login authorizes shared catalogue reads through both API instances",
+      "pass": true,
+      "counts": {
+        "api-1": 6,
+        "api-2": 6
+      },
+      "document": {
+        "fid": "5,db20be66e1",
+        "name": "availability-2026-10-09T15-41-04-179Z.txt",
+        "bytes": 31,
+        "sha256": "453f4f0284c699efe89c55c028c1c8691e3cd3304a1eb92ad0206f1841090e00",
+        "uploadedAt": "2026-10-09T15:41:10.881Z",
+        "documentId": "5,db20be66e1",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:41:10.881Z"
+      }
+    },
+    {
+      "name": "api-2 serves authenticated reads and new uploads while its peer is stopped",
+      "pass": true,
+      "reads": [
+        {
+          "status": 200,
+          "instance": "api-2",
+          "elapsedMilliseconds": 10
+        },
+        {
+          "status": 200,
+          "instance": "api-2",
+          "elapsedMilliseconds": 2021
+        },
+        {
+          "status": 200,
+          "instance": "api-2",
+          "elapsedMilliseconds": 2027
+        },
+        {
+          "status": 200,
+          "instance": "api-2",
+          "elapsedMilliseconds": 2090
+        },
+        {
+          "status": 200,
+          "instance": "api-2",
+          "elapsedMilliseconds": 2097
+        },
+        {
+          "status": 200,
+          "instance": "api-2",
+          "elapsedMilliseconds": 2102
+        }
+      ],
+      "uploadStatus": 201
+    },
+    {
+      "name": "api recreation is rediscovered without a gateway restart",
+      "pass": true,
+      "before": "55460a10f5fa902454bfb25a6eb4266c67082e5c22d950d85e317e08efc368bb",
+      "after": "2df0525bddf60685fb9e1793a42813ae08ce41a8116e8ce1b62a48d40b0aa744",
+      "counts": {
+        "api-2": 10,
+        "api-1": 10
+      }
+    },
+    {
+      "name": "api-1 serves authenticated reads and new uploads while its peer is stopped",
+      "pass": true,
+      "reads": [
+        {
+          "status": 200,
+          "instance": "api-1",
+          "elapsedMilliseconds": 2135
+        },
+        {
+          "status": 200,
+          "instance": "api-1",
+          "elapsedMilliseconds": 2143
+        },
+        {
+          "status": 200,
+          "instance": "api-1",
+          "elapsedMilliseconds": 2150
+        },
+        {
+          "status": 200,
+          "instance": "api-1",
+          "elapsedMilliseconds": 2208
+        },
+        {
+          "status": 200,
+          "instance": "api-1",
+          "elapsedMilliseconds": 2217
+        },
+        {
+          "status": 200,
+          "instance": "api-1",
+          "elapsedMilliseconds": 2225
+        }
+      ],
+      "uploadStatus": 201
+    },
+    {
+      "name": "api2 recreation is rediscovered without a gateway restart",
+      "pass": true,
+      "before": "07c01f6a3d08f93510138ccaecafcbeb253bcb46973f4273989bc39c473b902c",
+      "after": "bb5b3f6347e29957ffbb484d5a1ab3880fa6851c342f24954d1aae500b767471",
+      "counts": {
+        "api-1": 11,
+        "api-2": 9
+      }
+    },
+    {
+      "name": "Database failure remains a shared dependency failure with bounded responses",
+      "pass": true,
+      "catalogueFailureMilliseconds": 4014
+    },
+    {
+      "name": "An API that first connects during a database outage can recover without restarting",
+      "pass": true,
+      "recoveredStatus": 200
+    },
+    {
+      "name": "Coordinator loss is reflected by readiness and does not erase catalogue metadata",
+      "pass": true
+    },
+    {
+      "name": "One reachable storage service allows existing reads but shows degraded write service count",
+      "pass": true,
+      "observation": {
+        "status": "ready",
+        "instance": "api-1",
+        "catalogueReady": true,
+        "coordinatorReachable": true,
+        "reachableStorageServices": 1,
+        "requestedCopies": 2,
+        "writeServiceCountSatisfied": false
+      }
+    },
+    {
+      "name": "No reachable storage service is unready until recovery",
+      "pass": true
+    },
+    {
+      "name": "An upload with uncertain metadata acknowledgement is not replayed to the other API",
+      "pass": true,
+      "status": 503,
+      "recovered": {
+        "added": 1,
+        "existing": 0
+      },
+      "configSHA256": "bde32979a1b4a30642cf9171bdc6dbf6d037242beff07a1e48834ac2ec5b057e"
+    }
+  ],
+  "sourceSHA256": {
+    "app/server.mjs": "02f5d831ca5ee665398e51cd4aca3d7b52d166581dfa0bb669b45354dbccef8c",
+    "nginx.conf": "bde32979a1b4a30642cf9171bdc6dbf6d037242beff07a1e48834ac2ec5b057e",
+    "compose.yaml": "7ee0ee54884f3cec5330e14f6a488f1bd630afc2c2c2c8902319404dd92ffdb4"
+  }
+}

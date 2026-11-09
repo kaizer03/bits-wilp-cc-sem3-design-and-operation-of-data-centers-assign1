@@ -1,0 +1,69 @@
+{
+  "run": "2026-11-09T16-00-32-097Z",
+  "checks": [
+    {
+      "name": "New document has a stable identity, category and first immutable version",
+      "pass": true,
+      "document": {
+        "fid": "4,e036e63b7f",
+        "name": "contract-2026-11-09T16-00-32-097Z.txt",
+        "bytes": 17,
+        "sha256": "b585b69ffe265f0b00199766be2fbd37a2835c5b0e77aaba7fcd73ba70428892",
+        "uploadedAt": "2026-11-09T16:00:32.225Z",
+        "documentId": "4,e036e63b7f",
+        "version": 1,
+        "revision": 1,
+        "category": "Contracts",
+        "deletedAt": null,
+        "updatedAt": "2026-11-09T16:00:32.225Z"
+      }
+    },
+    {
+      "name": "A revision adds new bytes without replacing the original",
+      "pass": true,
+      "version": {
+        "fid": "1,e1a15ce828",
+        "name": "contract-2026-11-09T16-00-32-097Z.txt",
+        "bytes": 17,
+        "sha256": "9d975f1cc66ccd9c49ea296cfcce3e074dc9e62605416e418e1f9813a1979894",
+        "uploadedAt": "2026-11-09T16:00:32.296Z",
+        "documentId": "4,e036e63b7f",
+        "version": 2,
+        "revision": 2,
+        "category": "Contracts",
+        "deletedAt": null,
+        "updatedAt": "2026-11-09T16:00:32.296Z"
+      }
+    },
+    {
+      "name": "Stale revisions cannot overwrite a newer document",
+      "pass": true
+    },
+    {
+      "name": "Concurrent category changes have one winner and one conflict",
+      "pass": true,
+      "category": "Internal"
+    },
+    {
+      "name": "Trash hides the active document and preserves every version",
+      "pass": true
+    },
+    {
+      "name": "Restore returns the same document and version history",
+      "pass": true
+    },
+    {
+      "name": "Invalid categories and malformed mutation requests are rejected",
+      "pass": true
+    },
+    {
+      "name": "Committed lifecycle activity survives an API restart",
+      "pass": true
+    }
+  ],
+  "sourceSHA256": {
+    "app/server.mjs": "02f5d831ca5ee665398e51cd4aca3d7b52d166581dfa0bb669b45354dbccef8c",
+    "app/catalogue.mjs": "8833d7fd65e9d181d575a5c1a40488da33483e71fcc674640987f8441ec7f858",
+    "app/public/app.js": "ebc93401e89e3da035d1648a71c1cc84b78f14672e1fe636a8bf097ca381932b"
+  }
+}

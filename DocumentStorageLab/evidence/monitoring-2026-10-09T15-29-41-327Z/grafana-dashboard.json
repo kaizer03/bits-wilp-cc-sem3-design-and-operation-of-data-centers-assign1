@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canAdmin": false,
+    "canStar": false,
+    "canDelete": false,
+    "slug": "document-service-operations",
+    "url": "/d/dodc-operations/document-service-operations",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2026-10-09T15:27:57Z",
+    "updated": "2026-10-09T15:27:57Z",
+    "updatedBy": "Anonymous",
+    "createdBy": "Anonymous",
+    "version": 1,
+    "hasAcl": false,
+    "isFolder": false,
+    "apiVersion": "v0alpha1",
+    "folderId": 0,
+    "folderUid": "",
+    "folderTitle": "General",
+    "folderUrl": "",
+    "provisioned": true,
+    "provisionedExternalId": "documents.json",
+    "annotationsPermissions": {
+      "dashboard": {
+        "canAdd": false,
+        "canEdit": false,
+        "canDelete": false
+      }
+    }
+  },
+  "dashboard": {
+    "description": "Local DODC lab. API duration includes shared MongoDB and SeaweedFS work. Logical services share one Docker host. p95 is a bucket estimate; use raw benchmark data for reported measurements.",
+    "editable": false,
+    "id": 895607699337216,
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "up{job=\"document-api\"}",
+            "legendFormat": "{{instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "API scrape availability",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "dodc_dependency_ready",
+            "legendFormat": "{{api_instance}} / {{dependency}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Dependency readiness",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "reqps"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        },
+        "id": 3,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "sum by (api_instance) (rate(dodc_http_requests_total[1m]))",
+            "legendFormat": "{{api_instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "API requests per second",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 8
+        },
+        "id": 4,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum by (le, api_instance) (rate(dodc_http_request_duration_seconds_bucket[1m])))",
+            "legendFormat": "{{api_instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "API response p95 (histogram estimate)",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "reqps"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 16
+        },
+        "id": 5,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "sum by (api_instance) (rate(dodc_http_requests_total{status=~\"5..\"}[1m]))",
+            "legendFormat": "{{api_instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Server errors per second",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "Bps"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 16
+        },
+        "id": 6,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "sum by (direction) (rate(dodc_document_bytes_total[1m]))",
+            "legendFormat": "{{direction}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Document payload bytes per second",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "bytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 24
+        },
+        "id": 7,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "dodc_process_resident_memory_bytes",
+            "legendFormat": "{{api_instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "API resident memory",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "dodc-prometheus"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 24
+        },
+        "id": 8,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "rate(dodc_process_cpu_seconds_total[1m])",
+            "legendFormat": "{{api_instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "API CPU cores used",
+        "type": "timeseries"
+      }
+    ],
+    "refresh": "10s",
+    "schemaVersion": 39,
+    "tags": [
+      "DODC",
+      "local lab"
+    ],
+    "time": {
+      "from": "now-15m",
+      "to": "now"
+    },
+    "timezone": "browser",
+    "title": "Document service operations",
+    "uid": "dodc-operations",
+    "version": 1
+  }
+}

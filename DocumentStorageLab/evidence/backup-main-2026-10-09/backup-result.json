@@ -1,0 +1,10 @@
+{
+  "operation": "backup",
+  "directory": "evidence/backup-main-2026-10-09",
+  "documents": 3,
+  "retainedVersions": 3,
+  "logicalBytes": 832,
+  "capturedAt": "2026-10-09T15:11:42.539Z",
+  "elapsedMilliseconds": 480,
+  "verified": true
+}

@@ -1,0 +1,40 @@
+services:
+  api:
+    environment:
+      MASTER_URLS: http://master:9333,http://master2:9333,http://master3:9333
+  api2:
+    environment:
+      MASTER_URLS: http://master:9333,http://master2:9333,http://master3:9333
+  master:
+    image: chrislusf/seaweedfs:4.48
+    command: ["master", "-ip=master", "-ip.bind=0.0.0.0", "-mdir=/data", "-volumeSizeLimitMB=32", "-defaultReplication=001", "-peers=master:9333,master2:9333,master3:9333", "-telemetry=false"]
+    volumes: ["master-data:/data"]
+    networks: [storage]
+    restart: unless-stopped
+    cpus: 0.5
+    mem_limit: 256m
+  master2:
+    image: chrislusf/seaweedfs:4.48
+    command: ["master", "-ip=master2", "-ip.bind=0.0.0.0", "-mdir=/data", "-volumeSizeLimitMB=32", "-defaultReplication=001", "-peers=master:9333,master2:9333,master3:9333", "-telemetry=false"]
+    volumes: ["master2-data:/data"]
+    networks: [storage]
+    restart: unless-stopped
+    cpus: 0.5
+    mem_limit: 256m
+  master3:
+    image: chrislusf/seaweedfs:4.48
+    command: ["master", "-ip=master3", "-ip.bind=0.0.0.0", "-mdir=/data", "-volumeSizeLimitMB=32", "-defaultReplication=001", "-peers=master:9333,master2:9333,master3:9333", "-telemetry=false"]
+    volumes: ["master3-data:/data"]
+    networks: [storage]
+    restart: unless-stopped
+    cpus: 0.5
+    mem_limit: 256m
+  volume1:
+    command: ["volume", "-ip=volume1", "-ip.bind=0.0.0.0", "-port=8080", "-master=master:9333,master2:9333,master3:9333", "-dir=/data", "-max=8", "-dataCenter=lab", "-rack=rack1"]
+  volume2:
+    command: ["volume", "-ip=volume2", "-ip.bind=0.0.0.0", "-port=8080", "-master=master:9333,master2:9333,master3:9333", "-dir=/data", "-max=8", "-dataCenter=lab", "-rack=rack1"]
+  volume3:
+    command: ["volume", "-ip=volume3", "-ip.bind=0.0.0.0", "-port=8080", "-master=master:9333,master2:9333,master3:9333", "-dir=/data", "-max=8", "-dataCenter=lab", "-rack=rack1"]
+volumes:
+  master2-data: {}
+  master3-data: {}

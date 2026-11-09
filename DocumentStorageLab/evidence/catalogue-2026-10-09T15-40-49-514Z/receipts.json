@@ -1,0 +1,22 @@
+{
+  "receipt": {
+    "fid": "5,d618473902",
+    "name": "catalogue-2026-10-09T15-40-49-514Z.txt",
+    "bytes": 87,
+    "sha256": "22d19dfa5aa69567d0e8e046065c11c9e204723bf5084133a555359be9dd9e40",
+    "uploadedAt": "2026-10-09T15:40:49.825Z",
+    "documentId": "5,d618473902",
+    "version": 1,
+    "revision": 1,
+    "category": "General",
+    "deletedAt": null,
+    "updatedAt": "2026-10-09T15:40:49.825Z"
+  },
+  "legacy": {
+    "fid": "6,d78b97cb94",
+    "name": "legacy-2026-10-09T15-40-49-514Z.txt",
+    "bytes": 35,
+    "sha256": "7a775512c7850127775532fca80fc4f08c3e5dd3cb96558dd5f3b149220d1d80",
+    "uploadedAt": "2026-10-09T15:40:50.134Z"
+  }
+}

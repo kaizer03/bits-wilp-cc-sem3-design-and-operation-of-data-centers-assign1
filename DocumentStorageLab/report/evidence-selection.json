@@ -1,0 +1,14 @@
+{
+  "performance-*/summary.json": "evidence/performance-2026-10-09T15-46-08-463Z/summary.json",
+  "replication-20*/checks.json": "evidence/replication-2026-10-09T15-15-06-223Z/checks.json",
+  "masters-20*/checks.json": "evidence/masters-2026-10-09T15-41-57-587Z/checks.json",
+  "monitoring-20*/checks.json": "evidence/monitoring-2026-10-09T15-29-41-327Z/checks.json",
+  "availability-20*/checks.json": "evidence/availability-2026-10-09T15-41-04-179Z/checks.json",
+  "recovery-20*/checks.json": "evidence/recovery-2026-10-09T15-07-08-028Z/checks.json",
+  "lifecycle-browser-*/checks.json": "evidence/lifecycle-browser-2026-10-09T15-36-16-053Z/checks.json",
+  "preview-browser-*/checks.json": "evidence/preview-browser-2026-10-09T15-36-17-792Z/checks.json",
+  "monitoring-browser-*/checks.json": "evidence/monitoring-browser-2026-10-09T15-43-35-779Z/checks.json",
+  "catalogue-20*/checks.json": "evidence/catalogue-2026-10-09T15-40-49-514Z/checks.json",
+  "lifecycle-20*/checks.json": "evidence/lifecycle-2026-10-09T15-33-40-046Z/checks.json",
+  "access-20*/checks.json": "evidence/access-2026-10-09T15-33-22-921Z/checks.json"
+}

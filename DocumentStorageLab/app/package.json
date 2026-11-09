@@ -1,0 +1,14 @@
+{
+  "name": "dodc-document-storage-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@prometheus-io/client": "0.16.1",
+    "express": "5.2.1",
+    "mongodb": "7.7.0"
+  }
+}

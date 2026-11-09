@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-09T15:46:09.020Z",
+  "docker": {
+    "version": "29.8.2",
+    "kernel": "7.0.14-linuxkit",
+    "architecture": "aarch64",
+    "cpus": 16,
+    "memoryBytes": 16745033728
+  },
+  "client": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "method": {
+    "variants": [
+      "single",
+      "two",
+      "single-wide",
+      "single-tight"
+    ],
+    "sizes": [
+      4096,
+      262144,
+      1048576
+    ],
+    "concurrencies": [
+      1,
+      8
+    ],
+    "repetitions": 3,
+    "uploadCount": 16,
+    "readCount": 64,
+    "warmupsPerSize": 8,
+    "latency": "Full response body received; hash verification follows timer. Batch wall time includes verification.",
+    "percentile": "Nearest-rank p95 on successful samples; no confidence interval or SLA inferred.",
+    "order": "Variants sequential; workload order rotates across three repetitions. Docker main lab remains idle in background.",
+    "resources": "Single = .5 CPU/256 MiB; two = 2 x .5 CPU/256 MiB; single-wide = 1 CPU/512 MiB; single-tight = .25 CPU/128 MiB. MongoDB/storage caps fixed.",
+    "scope": "Authenticated loopback requests including gateway, scoped MongoDB sessions/catalogue/read activity, hashing and SeaweedFS replication 001. No physical data-centre claim."
+  }
+}

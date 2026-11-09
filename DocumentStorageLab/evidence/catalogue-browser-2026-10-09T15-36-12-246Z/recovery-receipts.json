@@ -1,0 +1,13 @@
+{
+  "format": "dodc-document-receipts",
+  "version": 1,
+  "receipts": [
+    {
+      "fid": "4,d1f58b9268",
+      "name": "uncertain-2026-10-09T15-36-12-246Z.txt",
+      "bytes": 34,
+      "sha256": "6adf6cd6d31a3566679a588987e7061dd8f7443426be8c1fe34b224a26453068",
+      "uploadedAt": "2026-10-09T15:36:14.449Z"
+    }
+  ]
+}

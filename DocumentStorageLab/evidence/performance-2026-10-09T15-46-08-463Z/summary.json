@@ -1,0 +1,978 @@
+{
+  "run": "2026-10-09T15-46-08-463Z",
+  "groups": 144,
+  "requests": 5760,
+  "summary": [
+    {
+      "variant": "single",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 44.604833000001236,
+      "medianRunThroughput": 125.74217353205766,
+      "runP95Ms": [
+        54.106667000000016,
+        44.604833000001236,
+        38.004124999999476
+      ],
+      "runThroughput": [
+        90.85873555236815,
+        125.74217353205766,
+        138.69024400814612
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 101.51329199999964,
+      "medianRunThroughput": 133.99343748715864,
+      "runP95Ms": [
+        107.71349999999984,
+        101.51329199999964,
+        15.420749999997497
+      ],
+      "runThroughput": [
+        133.99343748715864,
+        81.93358131043755,
+        641.7444668190341
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 66.66733299999942,
+      "medianRunThroughput": 84.26951497627277,
+      "runP95Ms": [
+        75.26570800000081,
+        66.66733299999942,
+        21.41462500000125
+      ],
+      "runThroughput": [
+        58.582504619120655,
+        84.26951497627277,
+        114.99712180172197
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 123.53920800000014,
+      "medianRunThroughput": 101.38520193505276,
+      "runP95Ms": [
+        123.53920800000014,
+        172.18033300000025,
+        69.43237500000032
+      ],
+      "runThroughput": [
+        101.38520193505276,
+        78.99995926564597,
+        178.60955254120995
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 88.97333399999843,
+      "medianRunThroughput": 27.628409673409493,
+      "runP95Ms": [
+        75.01879100000042,
+        91.7833750000027,
+        88.97333399999843
+      ],
+      "runThroughput": [
+        32.808816595171905,
+        26.90297002483687,
+        27.628409673409493
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 344.7442089999986,
+      "medianRunThroughput": 35.92780425398714,
+      "runP95Ms": [
+        344.7442089999986,
+        201.49045800000022,
+        482.8507090000021
+      ],
+      "runThroughput": [
+        35.92780425398714,
+        50.55473297738866,
+        20.68242410663005
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 4.74633299999914,
+      "medianRunThroughput": 265.59607434394354,
+      "runP95Ms": [
+        11.264874999999847,
+        4.489167000003363,
+        4.74633299999914
+      ],
+      "runThroughput": [
+        172.7789860668219,
+        265.59607434394354,
+        278.7812110593839
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 91.52533300000141,
+      "medianRunThroughput": 201.87191537347698,
+      "runP95Ms": [
+        91.52533300000141,
+        92.59212500000103,
+        81.90674999999828
+      ],
+      "runThroughput": [
+        157.41591929974518,
+        201.87191537347698,
+        457.0052104377975
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 7.206959000001007,
+      "medianRunThroughput": 166.0810760376302,
+      "runP95Ms": [
+        9.439834000000701,
+        7.206959000001007,
+        7.150125000000116
+      ],
+      "runThroughput": [
+        142.97599708014434,
+        166.0810760376302,
+        166.61364187514118
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 103.72724999999991,
+      "medianRunThroughput": 125.77598698888279,
+      "runP95Ms": [
+        104.0904159999991,
+        93.82849999999962,
+        103.72724999999991
+      ],
+      "runThroughput": [
+        125.77598698888279,
+        127.90893957937038,
+        125.02071461383386
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 74.55099999999948,
+      "medianRunThroughput": 34.82430165550544,
+      "runP95Ms": [
+        71.15587500000038,
+        81.203207999999,
+        74.55099999999948
+      ],
+      "runThroughput": [
+        34.82430165550544,
+        33.68046800589063,
+        35.41633410360024
+      ]
+    },
+    {
+      "variant": "single",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 282.2818750000006,
+      "medianRunThroughput": 42.561231855053684,
+      "runP95Ms": [
+        287.524542000001,
+        282.2818750000006,
+        210.5280840000014
+      ],
+      "runThroughput": [
+        37.63451397815735,
+        42.561231855053684,
+        45.86238712273147
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 53.79349999999977,
+      "medianRunThroughput": 110.67590118717487,
+      "runP95Ms": [
+        11.281125000001339,
+        65.92091600000276,
+        53.79349999999977
+      ],
+      "runThroughput": [
+        136.53430385557223,
+        99.18282649359472,
+        110.67590118717487
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 28.725124999997206,
+      "medianRunThroughput": 376.6441458577185,
+      "runP95Ms": [
+        28.725124999997206,
+        46.155832999997074,
+        13.713917000000947
+      ],
+      "runThroughput": [
+        376.6441458577185,
+        284.8717520725459,
+        611.7055593520267
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 41.000874999997905,
+      "medianRunThroughput": 97.0130100449175,
+      "runP95Ms": [
+        41.000874999997905,
+        77.26533300000301,
+        9.501583000004757
+      ],
+      "runThroughput": [
+        97.0130100449175,
+        82.09016963805297,
+        133.85667612639676
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 60.799334000003,
+      "medianRunThroughput": 220.64159486803598,
+      "runP95Ms": [
+        60.799334000003,
+        20.86095899999782,
+        68.3972089999952
+      ],
+      "runThroughput": [
+        220.64159486803598,
+        400.30898850053904,
+        167.38189123146267
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 50.50775000000431,
+      "medianRunThroughput": 53.39683106494122,
+      "runP95Ms": [
+        50.50775000000431,
+        17.43983400000434,
+        101.77179100000649
+      ],
+      "runThroughput": [
+        53.39683106494122,
+        71.34561367925242,
+        34.46589707190671
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 216.24474999999802,
+      "medianRunThroughput": 55.28769187165841,
+      "runP95Ms": [
+        241.88879199999792,
+        216.24474999999802,
+        190.60458300000028
+      ],
+      "runThroughput": [
+        65.8745933015828,
+        39.553168644881886,
+        55.28769187165841
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 6.661584000001312,
+      "medianRunThroughput": 211.3319318834264,
+      "runP95Ms": [
+        7.91737500000454,
+        6.661584000001312,
+        5.257584000006318
+      ],
+      "runThroughput": [
+        177.2866076934775,
+        211.3319318834264,
+        239.41287732661826
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 71.24945899999875,
+      "medianRunThroughput": 313.1747478392786,
+      "runP95Ms": [
+        71.24945899999875,
+        82.98691699999472,
+        10.428749999999127
+      ],
+      "runThroughput": [
+        313.1747478392786,
+        233.0696019685371,
+        610.0736020437766
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 9.668208000002778,
+      "medianRunThroughput": 134.76326279757464,
+      "runP95Ms": [
+        8.05225000000064,
+        10.217791999995825,
+        9.668208000002778
+      ],
+      "runThroughput": [
+        144.52815545318194,
+        134.59419577630504,
+        134.76326279757464
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 79.03500000000349,
+      "medianRunThroughput": 219.038213540213,
+      "runP95Ms": [
+        79.03500000000349,
+        101.58983299999818,
+        72.92291600000317
+      ],
+      "runThroughput": [
+        219.038213540213,
+        198.51563039181306,
+        285.7446894595021
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 22.285625000004075,
+      "medianRunThroughput": 65.81074987750442,
+      "runP95Ms": [
+        22.285625000004075,
+        34.61674999999377,
+        16.94512499999837
+      ],
+      "runThroughput": [
+        65.81074987750442,
+        64.29760416136014,
+        71.15963138483691
+      ]
+    },
+    {
+      "variant": "two",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 187.70249999999942,
+      "medianRunThroughput": 71.43962750824551,
+      "runP95Ms": [
+        187.70249999999942,
+        189.9403750000056,
+        117.70266599999741
+      ],
+      "runThroughput": [
+        65.89262001914497,
+        71.43962750824551,
+        86.53798535851722
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 8.567291999999725,
+      "medianRunThroughput": 140.2695663705685,
+      "runP95Ms": [
+        8.567291999999725,
+        7.945999999996275,
+        86.98841700000048
+      ],
+      "runThroughput": [
+        140.2695663705685,
+        181.8303210583714,
+        68.19851674363689
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 64.53625000000466,
+      "medianRunThroughput": 202.41101116913416,
+      "runP95Ms": [
+        72.21904199999699,
+        64.53625000000466,
+        16.51058400000329
+      ],
+      "runThroughput": [
+        155.87230648392307,
+        202.41101116913416,
+        575.3869252310843
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 32.822000000000116,
+      "medianRunThroughput": 101.63726001116397,
+      "runP95Ms": [
+        32.822000000000116,
+        10.135041000001365,
+        299.54758300000685
+      ],
+      "runThroughput": [
+        101.63726001116397,
+        127.68924727571657,
+        37.20949339200248
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 32.53354200000467,
+      "medianRunThroughput": 265.2558371826755,
+      "runP95Ms": [
+        53.76758400000108,
+        31.26620900000853,
+        32.53354200000467
+      ],
+      "runThroughput": [
+        192.99188100042073,
+        290.81589763276344,
+        265.2558371826755
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 38.64966700000514,
+      "medianRunThroughput": 63.90216578418331,
+      "runP95Ms": [
+        38.64966700000514,
+        43.643708000003244,
+        33.2567080000008
+      ],
+      "runThroughput": [
+        63.90216578418331,
+        56.31286266451268,
+        65.11382617136657
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 120.72049999999581,
+      "medianRunThroughput": 87.8644547566292,
+      "runP95Ms": [
+        131.71045799998683,
+        92.5013750000071,
+        120.72049999999581
+      ],
+      "runThroughput": [
+        81.80128139457545,
+        96.99730181393447,
+        87.8644547566292
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 6.04374999999709,
+      "medianRunThroughput": 193.61779771099827,
+      "runP95Ms": [
+        6.928249999997206,
+        5.195792000013171,
+        6.04374999999709
+      ],
+      "runThroughput": [
+        193.61779771099827,
+        220.54623623649957,
+        169.2143933858213
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 33.234874999994645,
+      "medianRunThroughput": 670.1599943110978,
+      "runP95Ms": [
+        56.778417000001355,
+        33.234874999994645,
+        11.316875000004075
+      ],
+      "runThroughput": [
+        439.6077396624086,
+        670.1599943110978,
+        923.5125945833357
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 7.687292000002344,
+      "medianRunThroughput": 160.59097478722052,
+      "runP95Ms": [
+        7.687292000002344,
+        6.740624999991269,
+        8.336000000010245
+      ],
+      "runThroughput": [
+        160.53976479042942,
+        172.70867828293544,
+        160.59097478722052
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 50.64400000000023,
+      "medianRunThroughput": 279.04771374943124,
+      "runP95Ms": [
+        50.64400000000023,
+        47.924708999998984,
+        57.19949999998789
+      ],
+      "runThroughput": [
+        279.04771374943124,
+        275.6264902914459,
+        293.9455254732547
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 18.90387500000361,
+      "medianRunThroughput": 73.32466392917769,
+      "runP95Ms": [
+        18.90387500000361,
+        63.79929199999606,
+        16.875958999997238
+      ],
+      "runThroughput": [
+        73.46989962663912,
+        55.25579764981527,
+        73.32466392917769
+      ]
+    },
+    {
+      "variant": "single-wide",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 104.23145899998781,
+      "medianRunThroughput": 94.35283537641516,
+      "runP95Ms": [
+        104.23145899998781,
+        100.93004099999962,
+        106.53979199999594
+      ],
+      "runThroughput": [
+        96.27130452192102,
+        94.35283537641516,
+        83.27253245758341
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 61.777249999999185,
+      "medianRunThroughput": 77.93216735445735,
+      "runP95Ms": [
+        76.80487500000163,
+        61.777249999999185,
+        31.265584000007948
+      ],
+      "runThroughput": [
+        44.127310047442364,
+        77.93216735445735,
+        137.8627472609006
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "upload",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 189.73279099998763,
+      "medianRunThroughput": 56.205044263616806,
+      "runP95Ms": [
+        295.72783300001174,
+        189.73279099998763,
+        65.87900000001537
+      ],
+      "runThroughput": [
+        27.531182126602516,
+        56.205044263616806,
+        206.79382332701317
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 174.87645899999188,
+      "medianRunThroughput": 37.48618426178761,
+      "runP95Ms": [
+        174.87645899999188,
+        189.4814170000027,
+        54.366041999994195
+      ],
+      "runThroughput": [
+        37.48618426178761,
+        14.637626682655128,
+        81.31356990076915
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "upload",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 181.96600000000035,
+      "medianRunThroughput": 56.586282151184854,
+      "runP95Ms": [
+        315.004958000005,
+        181.96600000000035,
+        170.6493749999936
+      ],
+      "runThroughput": [
+        48.63169527822201,
+        56.586282151184854,
+        57.50670680054824
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 186.15187499999593,
+      "medianRunThroughput": 11.485452797189762,
+      "runP95Ms": [
+        298.7357079999929,
+        186.15187499999593,
+        184.00683300000674
+      ],
+      "runThroughput": [
+        8.81074330319329,
+        15.816418826678682,
+        11.485452797189762
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "upload",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 585.2732499999984,
+      "medianRunThroughput": 16.40970802305986,
+      "runP95Ms": [
+        585.2732499999984,
+        536.0966660000122,
+        954.1521669999929
+      ],
+      "runThroughput": [
+        16.40970802305986,
+        19.090380158301596,
+        9.699055481790191
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 62.86020799999824,
+      "medianRunThroughput": 103.39832455487391,
+      "runP95Ms": [
+        64.44158300000709,
+        62.86020799999824,
+        23.775832999992417
+      ],
+      "runThroughput": [
+        70.30911526666557,
+        103.39832455487391,
+        169.33337316547934
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "download",
+      "size": 4096,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 190.8993749999936,
+      "medianRunThroughput": 107.0545834102623,
+      "runP95Ms": [
+        190.8993749999936,
+        196.54308299999684,
+        182.33504199999152
+      ],
+      "runThroughput": [
+        80.35567016684699,
+        107.0545834102623,
+        127.38682352496394
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 45.792207999998936,
+      "medianRunThroughput": 82.49213025399696,
+      "runP95Ms": [
+        64.60504099998798,
+        45.792207999998936,
+        43.61270900000818
+      ],
+      "runThroughput": [
+        61.68555786876374,
+        89.85978530427694,
+        82.49213025399696
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "download",
+      "size": 262144,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 288.4005419999885,
+      "medianRunThroughput": 54.40023333892061,
+      "runP95Ms": [
+        288.4005419999885,
+        296.1119580000086,
+        213.2957080000051
+      ],
+      "runThroughput": [
+        46.296915865844454,
+        54.40023333892061,
+        58.35146844547447
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 1,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 106.81500000000233,
+      "medianRunThroughput": 14.9664732023248,
+      "runP95Ms": [
+        106.81500000000233,
+        172.305457999988,
+        104.63020900000993
+      ],
+      "runThroughput": [
+        16.050021565423343,
+        14.420310284939271,
+        14.9664732023248
+      ]
+    },
+    {
+      "variant": "single-tight",
+      "operation": "download",
+      "size": 1048576,
+      "concurrency": 8,
+      "runs": 3,
+      "errors": 0,
+      "medianRunP95Ms": 504.0966669999907,
+      "medianRunThroughput": 18.284179506462443,
+      "runP95Ms": [
+        504.0966669999907,
+        900.1000419999909,
+        484.7045829999988
+      ],
+      "runThroughput": [
+        18.284179506462443,
+        16.015051309563123,
+        22.37671511918473
+      ]
+    }
+  ],
+  "sourceSHA256": {
+    "tests/performance.mjs": "f4cbfccf13b2dcb417c70d1af6a23e7cddd35873805c61a9ef0c252198aa6c73",
+    "app/server.mjs": "02f5d831ca5ee665398e51cd4aca3d7b52d166581dfa0bb669b45354dbccef8c",
+    "app/monitoring.mjs": "4116f9922376c9e35bce96010704c0703ebc21072ec377d0f4450394e131bc67",
+    "compose.yaml": "7ee0ee54884f3cec5330e14f6a488f1bd630afc2c2c2c8902319404dd92ffdb4",
+    "experiments/performance/nginx-single.conf": "4953c67859435a9823a255d09b5633dda261633b072062ea3464022dd4d55ed3",
+    "experiments/performance/single.yaml": "a46f2d1a0a1ceeb23937c7d1b3c6d71d4d2b263410ee97280195644249893499",
+    "experiments/performance/two.yaml": "6e7d6d77b2a732ce0d212f0c6a12c9b8dcf6ec63fb861a5c0640694dd86e0a84",
+    "experiments/performance/single-wide.yaml": "7f1092bce766d90411165ac9a3211979b60bdf4ea73562adfa2a6e3e7ba52a5e",
+    "experiments/performance/single-tight.yaml": "1eec4d9162c0b44a9329b12dacce9f840dcb3fcef4fc164639d7617baf592acd"
+  }
+}

@@ -1,0 +1,7 @@
+services:
+  api:
+    cpus: 0.5
+    mem_limit: 256m
+  api2:
+    cpus: 0.5
+    mem_limit: 256m

@@ -1,0 +1,6 @@
+# Separate clean restore uses the current tested app image; no failure injection.
+services:
+  api:
+    image: dodc-document-lab-test-api:latest
+  api2:
+    image: dodc-document-lab-test-api:latest

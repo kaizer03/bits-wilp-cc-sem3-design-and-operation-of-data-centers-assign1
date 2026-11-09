@@ -1,0 +1,9 @@
+services:
+  gateway:
+    depends_on: !override [api]
+    volumes: !override ["./experiments/performance/nginx-single.conf:/etc/nginx/nginx.conf:ro"]
+  api:
+    cpus: 0.5
+    mem_limit: 256m
+  api2:
+    profiles: [spare]

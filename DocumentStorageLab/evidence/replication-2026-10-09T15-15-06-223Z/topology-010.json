@@ -1,0 +1,116 @@
+{
+  "initial": {
+    "Topology": {
+      "Max": 16,
+      "Free": 4,
+      "DataCenters": [
+        {
+          "Id": "lab",
+          "Racks": [
+            {
+              "Id": "rack1",
+              "DataNodes": [
+                {
+                  "Url": "volume1:8080",
+                  "PublicUrl": "volume1:8080",
+                  "Volumes": 6,
+                  "EcShards": 0,
+                  "Max": 8,
+                  "VolumeIds": " 1-6"
+                }
+              ]
+            },
+            {
+              "Id": "rack2",
+              "DataNodes": [
+                {
+                  "Url": "volume2:8080",
+                  "PublicUrl": "volume2:8080",
+                  "Volumes": 6,
+                  "EcShards": 0,
+                  "Max": 8,
+                  "VolumeIds": " 1-6"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Layouts": [
+        {
+          "replication": "010",
+          "ttl": "",
+          "writables": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "collection": "",
+          "diskType": "hdd"
+        }
+      ]
+    },
+    "TopologyId": "7b280e11-5d3a-4c94-bf41-0e6e39576a21",
+    "Version": "30GB 4.48 530be3e37"
+  },
+  "final": {
+    "Topology": {
+      "Max": 16,
+      "Free": 6,
+      "DataCenters": [
+        {
+          "Id": "lab",
+          "Racks": [
+            {
+              "Id": "rack1",
+              "DataNodes": [
+                {
+                  "Url": "volume1:8080",
+                  "PublicUrl": "volume1:8080",
+                  "Volumes": 8,
+                  "EcShards": 0,
+                  "Max": 8,
+                  "VolumeIds": " 1-8"
+                }
+              ]
+            },
+            {
+              "Id": "rack2",
+              "DataNodes": null
+            },
+            {
+              "Id": "rack3",
+              "DataNodes": [
+                {
+                  "Url": "volume3:8080",
+                  "PublicUrl": "volume3:8080",
+                  "Volumes": 2,
+                  "EcShards": 0,
+                  "Max": 8,
+                  "VolumeIds": " 7-8"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Layouts": [
+        {
+          "replication": "010",
+          "ttl": "",
+          "writables": [
+            7,
+            8
+          ],
+          "collection": "",
+          "diskType": "hdd"
+        }
+      ]
+    },
+    "TopologyId": "7b280e11-5d3a-4c94-bf41-0e6e39576a21",
+    "Version": "30GB 4.48 530be3e37"
+  }
+}

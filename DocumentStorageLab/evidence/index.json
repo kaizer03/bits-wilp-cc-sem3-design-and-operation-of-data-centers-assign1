@@ -1,0 +1,331 @@
+{
+  "reportInputs": "report/evidence-selection.json",
+  "reportSHA256": "4cde8ef2144e92f57d282ffe64b22fb862639227418c0ca8c4357798b01bd3ab",
+  "deploymentCheck": "evidence/deployment-main-2026-11-09T16-00-55-498Z/deployment-check.json",
+  "runs": [
+    {
+      "directory": "evidence/access-2026-10-09T15-33-22-921Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 10
+    },
+    {
+      "directory": "evidence/access-2026-11-09T16-00-27-937Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 10
+    },
+    {
+      "directory": "evidence/access-browser-2026-10-09T15-36-09-972Z",
+      "files": [
+        "checks.json",
+        "editor-workspace.png",
+        "sign-in.png",
+        "viewer-mobile.png"
+      ],
+      "passedGroups": 8
+    },
+    {
+      "directory": "evidence/availability-2026-10-09T15-41-04-179Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 12
+    },
+    {
+      "directory": "evidence/backup-main-2026-10-09",
+      "files": [
+        "COMPLETE",
+        "backup-result.json",
+        "contents/1729158014fbf9fba88c5c0538202bc4f43d7223639440c9a6ee24dcde7ab404.bin",
+        "contents/22d19dfa5aa69567d0e8e046065c11c9e204723bf5084133a555359be9dd9e40.bin",
+        "contents/dc2e241ab5b6957d3917ac1747b656896c7fbb68032338289f44fafe26b2944b.bin",
+        "manifest.json",
+        "manifest.sha256",
+        "metadata.ejson"
+      ]
+    },
+    {
+      "directory": "evidence/bulk-import-2026-10-09T15-04-20-556Z",
+      "files": [
+        "checks.json"
+      ]
+    },
+    {
+      "directory": "evidence/catalogue-2026-10-09T15-40-49-514Z",
+      "files": [
+        "checks.json",
+        "receipts.json",
+        "services.txt"
+      ],
+      "passedGroups": 9
+    },
+    {
+      "directory": "evidence/catalogue-browser-2026-10-09T15-36-12-246Z",
+      "files": [
+        "checks.json",
+        "download.txt",
+        "mobile.png",
+        "recovery-receipts.json",
+        "uncertain-upload.png",
+        "workspace.png"
+      ],
+      "passedGroups": 8
+    },
+    {
+      "directory": "evidence/deployment-main-2026-10-09T16-12-26-327Z",
+      "files": [
+        "deployment-check.json"
+      ]
+    },
+    {
+      "directory": "evidence/deployment-main-2026-10-09T18-31-52-011Z",
+      "files": [
+        "deployment-check.json"
+      ]
+    },
+    {
+      "directory": "evidence/deployment-main-2026-11-09T16-00-55-498Z",
+      "files": [
+        "deployment-check.json"
+      ]
+    },
+    {
+      "directory": "evidence/lifecycle-2026-10-09T15-33-40-046Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 8
+    },
+    {
+      "directory": "evidence/lifecycle-2026-11-09T16-00-32-097Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 8
+    },
+    {
+      "directory": "evidence/lifecycle-browser-2026-10-09T15-36-16-053Z",
+      "files": [
+        "checks.json",
+        "mobile-details.png",
+        "version-history.png",
+        "workspace.png"
+      ],
+      "passedGroups": 7
+    },
+    {
+      "directory": "evidence/masters-2026-10-09T15-39-25-729Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 4
+    },
+    {
+      "directory": "evidence/masters-2026-10-09T15-41-57-587Z",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 4
+    },
+    {
+      "directory": "evidence/monitoring-2026-10-09T15-29-41-327Z",
+      "files": [
+        "checks.json",
+        "grafana-dashboard.json"
+      ],
+      "passedGroups": 6
+    },
+    {
+      "directory": "evidence/monitoring-browser-2026-10-09T15-43-35-779Z",
+      "files": [
+        "checks.json",
+        "grafana-resources.png",
+        "grafana.png",
+        "storage-policy.png"
+      ],
+      "passedGroups": 2
+    },
+    {
+      "directory": "evidence/performance-2026-10-09T15-46-08-463Z",
+      "files": [
+        "deployments.json",
+        "environment.json",
+        "metrics-single-tight.json",
+        "metrics-single-wide.json",
+        "metrics-single.json",
+        "metrics-two.json",
+        "resource-samples.json",
+        "results.json",
+        "summary.csv",
+        "summary.json"
+      ]
+    },
+    {
+      "directory": "evidence/preview-browser-2026-10-09T15-36-17-792Z",
+      "files": [
+        "canvas.png",
+        "checks.json",
+        "img.png"
+      ],
+      "passedGroups": 2
+    },
+    {
+      "directory": "evidence/recovery-2026-10-09T15-07-08-028Z",
+      "files": [
+        "backup/COMPLETE",
+        "backup/backup-result.json",
+        "backup/contents/007dcf53de4f0024daa017eaf7c2ef3a92fb2b477f29ce5002a04ed95811cdad.bin",
+        "backup/contents/0182fe0cf9633dc9dad0da86ce491ff0363f5d3e565a43cb932647d1c26d6183.bin",
+        "backup/contents/01a2c0228766b3da6183bd0a4c5960be9acfdf446eadf7a5f5347fa4b6dd872e.bin",
+        "backup/contents/0429225e5046cc88d832c861420a7599a7ef90f7b76303edd7a410afd144718f.bin",
+        "backup/contents/049d060132f6d89273a53eed4b59d6417df292fb8cc02e05dedd975f99abe837.bin",
+        "backup/contents/06634fb8a2ddc3254a4b14cd2ef02f259d3c99abf14bdc56b0ac418e815d5908.bin",
+        "backup/contents/08b1c87af695c5223475795e3f65826231499c86f398065041f6472403c4e2b9.bin",
+        "backup/contents/0bce61b122c90449d5c30b5c4033323076147aa4d2e7ee8fdd2bcc0a3f17f42a.bin",
+        "backup/contents/0c19089dae2eb09c666f31ab9779200e288f491b072c7ed5e0869e574337147f.bin",
+        "backup/contents/0d85c7f569097d18c054c3fef8e5a9a6a019ad72e34131a978b5ef9dea26bf25.bin",
+        "backup/contents/0e22b512cc7c51c046de0ca96046aa82e94e82f244dd7aae6bb8609fc2792adb.bin",
+        "backup/contents/0f9e0f650b708068c6682ffbf21ff8640a2a17dc62655abf9275208bf3590a96.bin",
+        "backup/contents/125118dfde2529bc874efdfc103a5c2f357f1099d7e84f65276a638db4eee44b.bin",
+        "backup/contents/157655a4866c1a72ea3e59d657829b37c630c73b1942b716f9dadfee70a4e487.bin",
+        "backup/contents/15de39bb68be4bf8c4dc8f7c3b722aeeb1d0622fad28d5cafe6ac24ad57d5342.bin",
+        "backup/contents/1729158014fbf9fba88c5c0538202bc4f43d7223639440c9a6ee24dcde7ab404.bin",
+        "backup/contents/17d08dff342d0ff531e6e70f328b373f1ac800b717620dc33d30e5edb0782e49.bin",
+        "backup/contents/19076396528f9d24f3478e55dfdd4314cf65ed626bf945d5d3b6dc2dbc450fdd.bin",
+        "backup/contents/20baca26d9882a9bd744319c89ae2433db7464ae9c904f7d7a13d06ea321f9ea.bin",
+        "backup/contents/22d19dfa5aa69567d0e8e046065c11c9e204723bf5084133a555359be9dd9e40.bin",
+        "backup/contents/2366a28fc0dc508fcfb0148b57b42c4daee83ed97604591afffb192275c15b7f.bin",
+        "backup/contents/244e42e729bc5bb2dd87dae091bb3e408d519899f38b2db9add2ddb73a49a16c.bin",
+        "backup/contents/24cfc63e88d248cdc7ba861c189219b6ec8fd6109ef802ef449497c8b4996b76.bin",
+        "backup/contents/26b52f8886ca9bfd0483fba69ee8c1823f9ac65085a3c92173fdb07f7a14cbd0.bin",
+        "backup/contents/27c7d480b7624fc54b9d75793fae6c9f63cb554b925fcdd9e959854249160aa4.bin",
+        "backup/contents/2adc6e81d144c476de8f1599fb4b6aad92d5fba2ff9747b75ea1f3130ac4ebe1.bin",
+        "backup/contents/2fdccf9b72c5670ddaf52cd7ac28ad98caeb9bef79bc776e5145c495a5ea31c3.bin",
+        "backup/contents/376211097c638e1f335151b4d3fc308511ad9fc7b30259845070c0350d6da460.bin",
+        "backup/contents/3fccaa90ce8d8d8155c7381b8102bc94442fce1163b5d40d9de461b4f1fc3e08.bin",
+        "backup/contents/453f4f0284c699efe89c55c028c1c8691e3cd3304a1eb92ad0206f1841090e00.bin",
+        "backup/contents/4b925aa6731ade3a1545ef888a1655414af12bbb6b3ff0ae04fb37d3b534463b.bin",
+        "backup/contents/554b9ed73cfd8b04ef08e4a6036ff492eec010ecd98efd6ebb6c0fa9061e0a0b.bin",
+        "backup/contents/560a56b4d418a094e889a3dfb6a562611eaf6ea00bd65e897e371395d974e6d8.bin",
+        "backup/contents/581b26de1805552334c9f666418c5d5a63a50c48f20e82ea6e7bd1bb9d80c0d0.bin",
+        "backup/contents/59726e06c2a8783193f46eb6dd5166a9c98ef716c676c24abe13bf9b7f056b0c.bin",
+        "backup/contents/5c7cc1914df5d5ecc891a99b02f3b1bc69a85cf5ea391fab334d5150f2d2ef4f.bin",
+        "backup/contents/5d20cf6925ada48a501ea60bfaa00395d7e7be3a69a63e7e0842e9a765c86ad1.bin",
+        "backup/contents/5d8bd4ba330599b295891e53c7407ad8e3dba7d5f094572023aa73e6a923aa5a.bin",
+        "backup/contents/5db0c7a3241e08167f606ef169bd2008e383e143301aebcd69d3ec0c9d9036fb.bin",
+        "backup/contents/6019edb3285390b3056ba3d93ed090c0a5622b7eebad9604c5db5e64aa028fcf.bin",
+        "backup/contents/60645ce5e3fe22959a46bba95a073f673416a1f26e713c20636b9239249ec151.bin",
+        "backup/contents/60ea5eead1e7c645621841bf229f0c81c8f3d69df5d54821b264506428afb203.bin",
+        "backup/contents/64434253027d26ed412658b3565da254e4da3f9a35e41697e4b23b79f6f5f24c.bin",
+        "backup/contents/6adf6cd6d31a3566679a588987e7061dd8f7443426be8c1fe34b224a26453068.bin",
+        "backup/contents/6b6e5d37807392976189943e94d14c7fed78ebb0ecdd7637a1c6ec4acf0d87ae.bin",
+        "backup/contents/6e09b8a6e388633fb9923bb3d749204dd5231ae36729d54cd3cd43343100ec99.bin",
+        "backup/contents/6ebf183f2f11a3f5b5a35fd8f2231c9c22e3251c08334eac4a59d63236839a16.bin",
+        "backup/contents/7081fec1a83822dc912a46d20cbfd1c7b1781cc21e09890b3bf4ca7ca9310666.bin",
+        "backup/contents/70b23ef197510aa41f55ac20ecac59bd5a438db9a4addbd5081589bc1a335203.bin",
+        "backup/contents/7147fdc23646e44575c55309f40362aa8f42e19530f5194a51b886c009d1bf76.bin",
+        "backup/contents/716085f665d9bd1723703d030d4e37eda7fd203956ce653d89700dc8d1d8cb47.bin",
+        "backup/contents/72016c0bbb7f7ac3bdf4f6678bd2c5741f80f9e942ed2e6e3303f5a19097dd45.bin",
+        "backup/contents/721bb8f8903703f2f29003169e41540e1320a84de6ec0f277fbc94470923bd82.bin",
+        "backup/contents/74618eec12bd41eb6e589910d6f72c2d47a863280e1f9d52ae224a8732538de1.bin",
+        "backup/contents/7a775512c7850127775532fca80fc4f08c3e5dd3cb96558dd5f3b149220d1d80.bin",
+        "backup/contents/7ad30e01ccd4f7eee31a28c6390cb0579487c021d1fb4f4702793f6b39c8f8c4.bin",
+        "backup/contents/7b180421c2a3455c05c543ab6f5eb2460f86ceffe37ccb974071120f9a6b18eb.bin",
+        "backup/contents/7fa5b1c7eba2b7bdd02b7c431f09dfcf20ad4314b4465817188cfac972931e8a.bin",
+        "backup/contents/80058dcf176a971893d35709a85fc1fd449192a9746e01e0c13d21e71da79593.bin",
+        "backup/contents/85382760a56ada5d13211ed9e4a1096bc1380fe9706c3ecc314f176d19b5f58c.bin",
+        "backup/contents/8a5aa3cb5c30fc5a5fde518634d78efaf3a7c10faad6410b924be65f6b0ed032.bin",
+        "backup/contents/8ad1abb5912f6646830e7bbe303b2968abaff7472904a4157c7eba2effdf0b65.bin",
+        "backup/contents/8b044fb6453044f8a17773edaf8304e91a2e8f3e8dcd16254885c7932d861f14.bin",
+        "backup/contents/8cd074435aa535e2566c010abd92ca3785280661f16411a4c7c3dd40823f2e61.bin",
+        "backup/contents/8ec103339a9b0d08454284425eba6f0bd7d50c1370c649af9b6de3d21cfaef33.bin",
+        "backup/contents/92196b2e45a177dddb705205d25c8ff175dd6f73c98aaed6c28a373e0bbaa72b.bin",
+        "backup/contents/92e46ab48efab8995f1714b50d1ff8168c3576c156b51bbee66a749e249ed3f9.bin",
+        "backup/contents/935181816d38b2ad4214be01678d78065b49482d74f31101d213d75c0ed42092.bin",
+        "backup/contents/94e7683d582ff8bf8199fb741ea50c3facb83b7daed4179b6c29d820638d15b7.bin",
+        "backup/contents/9af3280d250a43041880c3082e562c5ad756eb6170b52d48d7953efc552a36e9.bin",
+        "backup/contents/9b8f09ab93c47d9318f916a5b40f032ba85e16deb333a83011c13dcaa91da1e6.bin",
+        "backup/contents/9bc4c3436448070789ab339abf2aa040d274de47884306e38731a4d0c6e19df1.bin",
+        "backup/contents/9d975f1cc66ccd9c49ea296cfcce3e074dc9e62605416e418e1f9813a1979894.bin",
+        "backup/contents/9f1f9142c02c716cb7e14f1d718e47166b15f02908aa4299b328e7d0ce136d95.bin",
+        "backup/contents/a067a3f8763f529483cad17183dcc615767334685340d21077a955fd53a58096.bin",
+        "backup/contents/a1428798366f2004e6c8a1ec42ca8ebf20d07d01454ec99fb625d0a5f9063e92.bin",
+        "backup/contents/a3b20230f25c71b92b6fe1fdeb4e95f588fa01bb584f8616447073548eadcca2.bin",
+        "backup/contents/a44cabfa58dac6fc8f37fa7d28d50d925132d20342298fe49caba2f009e3fb25.bin",
+        "backup/contents/a6ae5db143a55276f0da3d70246e5ecef52ad0ab7ef86d4364157cf6084084ad.bin",
+        "backup/contents/a9e94ef2c1e07394c985598fada1c9aaa84663699bfb9875c1fc878a330aac5a.bin",
+        "backup/contents/abf0b8975ad530490bb9736147555c2525a6aa80d48ebf05d43d86c761794d73.bin",
+        "backup/contents/acaaa1e9ea9b70942f504c3f4293a66fe6aedb4100775ea9638e88201ba33696.bin",
+        "backup/contents/acb31eb35b96d8981a7a4144bd4c9c264fd5eaab2254fd6ba54332d28d7f41d1.bin",
+        "backup/contents/ae626a23396a9cfb5e8e0da444e5322e35a33af6f92c5c69fd3498344c9b68d0.bin",
+        "backup/contents/b182312017d3afc55bf3d5a82bb1b6bae6a4a13e15bfae32b504cf802e53e8a3.bin",
+        "backup/contents/b1d22d80f1e4f7a2de9e76a82446392e2e65ea421bdbf50978ab16db3e511392.bin",
+        "backup/contents/b21bf0eb711e2e87c072180aa5e699ef74ee964c06d231ebcc50d2d2dd4f3821.bin",
+        "backup/contents/b3144085135fa586ba9422c489827cac68c89167ceeeaeba656379c81de66c15.bin",
+        "backup/contents/b585b69ffe265f0b00199766be2fbd37a2835c5b0e77aaba7fcd73ba70428892.bin",
+        "backup/contents/b89ba1265d79fefd66a6faf90762282f752fcd200b0d45838c6b4017fa09c6dd.bin",
+        "backup/contents/bcc5b3c97819a805298a894f5aceb301129eb5d0951c592ce1babd1696324603.bin",
+        "backup/contents/bda07cf1648cbfc4a456bfc4847355d7977100c549255ef9195b10f2335815ef.bin",
+        "backup/contents/beb138485dfa7b4ca12ed4a52416c518e7d382613967089d76f1760537be6423.bin",
+        "backup/contents/c5da5ba3e56b0cf09014680acf81c66005dd59190b7f8e17257a7fb843215861.bin",
+        "backup/contents/c60b27d9d4c459cee6c788fb2ccd0acad45f5c8e852f42e6abd9a1f73a5126da.bin",
+        "backup/contents/c8377e25947c784bd387eda41d681e85d432ac1da14dbf55cff6147513044e79.bin",
+        "backup/contents/c85f093cd9a808b3b5319ec5f7806a79d748c3d9457490cd24dbd1919fc5b90e.bin",
+        "backup/contents/cba5aacdd60aad44b0ec90978a76328725364a90a324b643855de2f3fbb251a9.bin",
+        "backup/contents/ce4eed5c9b1f8559564a8c0113dae3c20c55c61aacbbd1dbb5a0ab3bd19b6bea.bin",
+        "backup/contents/d353dfa977087e95fd614cf18665449dca7e60472f29ed1f0a0e73d8c4d440d7.bin",
+        "backup/contents/d64be1f199992298db470de924e6975ee315c245cf17d9421dcc6b159f059a77.bin",
+        "backup/contents/d6b230cdd66cd9866d0e0a899403d1cff3d4575214dd95e7bb61919b86f63bf5.bin",
+        "backup/contents/d76f901aa8cbfa4cc40e03f04d77d77ab50b266c1bea98471cdb78391fb000f1.bin",
+        "backup/contents/d87f0303101f7daced7356f054a43c10e1610eafe6b3d614d3094020f518f6d8.bin",
+        "backup/contents/dc2e241ab5b6957d3917ac1747b656896c7fbb68032338289f44fafe26b2944b.bin",
+        "backup/contents/dcf7eec81438d3f33bd0e6c324f5403b2f2948630de75b4173ead543521b205c.bin",
+        "backup/contents/de3c9d3e123fda11e170112bc85e46f40a4d1210562e1486ee68f661c1a7d519.bin",
+        "backup/contents/dfe88511c9f15d969d8126d8b3b5132b4e047dc4759bb6cde513da6cf653db12.bin",
+        "backup/contents/e6477c3df99ac811bce74b0505360b2e0b3f17c0d5664ce1f28f694b9b9dd6d6.bin",
+        "backup/contents/e7e878bf2bccc1ea2be1a03da8de4ce56bc6a9718840dd03fad0db30e1081bea.bin",
+        "backup/contents/e8a05bfb9d47abb6fecb3d8a5c918b3299618e0b90c38c9bde696c6f05c51b94.bin",
+        "backup/contents/ea15355e95390b2d1036737ffd0d3a436736585babbb72cc51a2f13568a8939a.bin",
+        "backup/contents/edd293d0e170daf10838184e3686313f8f8a2382d154bdaacb8f56a8b5e04f0c.bin",
+        "backup/contents/f2259809cf17b53f8236779d451b2efdecd1199ca73437b2ae32410e3b73a829.bin",
+        "backup/contents/f543cf4cebfde1c2b76e73160002163d02c55c17503a9fafb877f60f8290c005.bin",
+        "backup/contents/f76c30658a8ed86cb9cec9a61557ee4fa6866ed9885551e7dc94341c7d07827e.bin",
+        "backup/contents/f7853022e40ab8a7c47052289a6985831bb41dd3cc3bb496872041f39413fb6a.bin",
+        "backup/contents/fc84ab999fbc151f4266efbad8fb51563ddca11230e19dea2e29d96dbce57145.bin",
+        "backup/contents/fd0b9def738834f5e6f9b35ca5bc0d014374090b6bddf29e0a6122d5696cde77.bin",
+        "backup/contents/fdf2e0fd66c6d406c16bd2b6c2ffe4f2401cb521cf04a58c5808ca7360da402a.bin",
+        "backup/contents/ff9d655c16f651843755518eef2c934608bd68a5a4527e0cd96fd9ce1c305b97.bin",
+        "backup/manifest.json",
+        "backup/manifest.sha256",
+        "backup/metadata.ejson",
+        "backup/restore-result-dodc-document-lab-restore-1791558428029.json",
+        "checks.json"
+      ],
+      "passedGroups": 9
+    },
+    {
+      "directory": "evidence/replication-2026-10-09T15-15-06-223Z",
+      "files": [
+        "checks.json",
+        "topology-000.json",
+        "topology-001.json",
+        "topology-010.json"
+      ],
+      "passedGroups": 14
+    },
+    {
+      "directory": "evidence/ui-2026-10-08-overview",
+      "files": [
+        "browser-receipts.json"
+      ],
+      "purpose": "Original sample receipt references"
+    }
+  ],
+  "notes": [
+    "October results and screenshots record the original experiments. The November checks cover the revised interface and dependency lockfile.",
+    "Local filesystem prefixes were removed from published evidence paths."
+  ]
+}

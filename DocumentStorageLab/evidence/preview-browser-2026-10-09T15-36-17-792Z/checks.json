@@ -1,0 +1,15 @@
+{
+  "run": "2026-10-09T15-36-17-792Z",
+  "checks": [
+    {
+      "name": "sample-image.png verified bytes and preview element loaded",
+      "pass": true
+    },
+    {
+      "name": "sample-invoice.pdf verified bytes and preview element loaded",
+      "pass": true
+    }
+  ],
+  "pageErrors": [],
+  "pdfLimit": "Verified PDF bytes, rendered canvas and extracted invoice text. PDF preview is capped at ten pages."
+}

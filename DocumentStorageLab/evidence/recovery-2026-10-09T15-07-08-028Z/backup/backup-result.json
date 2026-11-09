@@ -1,0 +1,10 @@
+{
+  "operation": "backup",
+  "directory": "evidence/recovery-2026-10-09T15-07-08-028Z/backup",
+  "documents": 167,
+  "retainedVersions": 174,
+  "logicalBytes": 6733,
+  "capturedAt": "2026-10-09T15:07:08.477Z",
+  "elapsedMilliseconds": 1809,
+  "verified": true
+}

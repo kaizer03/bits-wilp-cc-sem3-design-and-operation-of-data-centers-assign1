@@ -1,0 +1,9 @@
+# Failure injection and administrative secret mount are restricted to this test project.
+services:
+  api:
+    image: dodc-document-lab-test-api:latest
+  api2:
+    image: dodc-document-lab-test-api:latest
+  catalogue:
+    command: ["mongod", "--replSet", "rs0", "--bind_ip_all", "--keyFile", "/key/keyfile", "--setParameter", "enableTestCommands=1"]
+    secrets: [mongo_admin_password]

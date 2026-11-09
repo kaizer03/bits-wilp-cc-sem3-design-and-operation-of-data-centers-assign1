@@ -1,0 +1,13 @@
+groups:
+  - name: document-service
+    rules:
+      - alert: DocumentApiUnavailable
+        expr: up{job="document-api"} == 0
+        for: 20s
+        labels: {severity: warning}
+        annotations: {summary: "A document API metrics listener is unavailable"}
+      - alert: DocumentDependencyUnavailable
+        expr: dodc_dependency_ready == 0
+        for: 20s
+        labels: {severity: warning}
+        annotations: {summary: "An observed document API dependency is unavailable"}

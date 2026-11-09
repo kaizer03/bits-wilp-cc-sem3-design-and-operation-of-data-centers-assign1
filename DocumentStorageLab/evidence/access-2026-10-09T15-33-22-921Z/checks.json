@@ -1,0 +1,68 @@
+{
+  "run": "2026-10-09T15-33-22-921Z",
+  "checks": [
+    {
+      "name": "Anonymous requests cannot read or mutate document resources",
+      "pass": true
+    },
+    {
+      "name": "Incorrect and unknown accounts have the same sign-in error",
+      "pass": true
+    },
+    {
+      "name": "Editor uploads and viewer retrieves content with matching hash",
+      "pass": true
+    },
+    {
+      "name": "Viewer writes are rejected by the server even with forged controls",
+      "pass": true
+    },
+    {
+      "name": "Cross-site and missing-Origin mutations cannot use an editor session",
+      "pass": true
+    },
+    {
+      "name": "Unknown storage identifiers are not exposed through authenticated reads",
+      "pass": true
+    },
+    {
+      "name": "Sessions survive API restart and revoked sessions cannot be reused",
+      "pass": true
+    },
+    {
+      "name": "Cookies are HttpOnly and sessions store token hashes with explicit expiry",
+      "pass": true,
+      "flags": [
+        "HttpOnly",
+        "SameSite=Strict",
+        "Path=/"
+      ],
+      "expiredSessionRejected": true
+    },
+    {
+      "name": "Application database credentials cannot administer MongoDB or write another database",
+      "pass": true,
+      "permissions": [
+        {
+          "name": "admin",
+          "denied": true
+        },
+        {
+          "name": "otherDatabase",
+          "denied": true
+        }
+      ]
+    },
+    {
+      "name": "Repeated invalid sign-ins are bounded by a shared database budget",
+      "pass": true
+    }
+  ],
+  "sourceSHA256": {
+    "app/server.mjs": "28f038d39742b85af2611d196711e436ee45dfd9dc88266ef33adc1b51220ec3",
+    "app/auth.mjs": "77a5408566ef41ecd1b17f60b38ae482f7b698ee4b96c8caa520bfadde14126a",
+    "app/database.mjs": "6364d78a77549ce7f836f91d3cd5d44eb28747c0c1ed24b1c3c60543143169a5",
+    "compose.yaml": "7ee0ee54884f3cec5330e14f6a488f1bd630afc2c2c2c8902319404dd92ffdb4",
+    "init-replica.js": "1944b86ab2d6a194798ef9cfd40eb4743c42b4371c6fc72a51920bf778a392fa"
+  }
+}

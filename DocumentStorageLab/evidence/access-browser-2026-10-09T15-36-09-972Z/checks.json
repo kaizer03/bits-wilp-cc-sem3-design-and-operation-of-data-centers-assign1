@@ -1,0 +1,38 @@
+{
+  "run": "2026-10-09T15-36-09-972Z",
+  "checks": [
+    {
+      "name": "Logged-out browser sees the sign-in form without document data",
+      "pass": true
+    },
+    {
+      "name": "Rejected sign-in keeps the workspace closed",
+      "pass": true
+    },
+    {
+      "name": "Editor retains document upload and management controls",
+      "pass": true
+    },
+    {
+      "name": "Viewer sees version history and verified preview without editing controls",
+      "pass": true
+    },
+    {
+      "name": "A forged viewer request is still rejected by the server",
+      "pass": true
+    },
+    {
+      "name": "Reload restores the database-backed viewer session",
+      "pass": true
+    },
+    {
+      "name": "Signed-in account controls fit the mobile workspace",
+      "pass": true
+    },
+    {
+      "name": "Sign-out removes visible document data and revokes access",
+      "pass": true
+    }
+  ],
+  "pageErrors": []
+}

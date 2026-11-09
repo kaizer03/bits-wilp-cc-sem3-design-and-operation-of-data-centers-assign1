@@ -1,0 +1,96 @@
+{
+  "run": "2026-10-09T15-07-08-028Z",
+  "checks": [
+    {
+      "name": "Backup fixture has two immutable versions and a trashed document",
+      "pass": true,
+      "document": {
+        "fid": "3,b67ba10af0",
+        "name": "recovery-2026-10-09T15-07-08-028Z.txt",
+        "bytes": 25,
+        "sha256": "60ea5eead1e7c645621841bf229f0c81c8f3d69df5d54821b264506428afb203",
+        "uploadedAt": "2026-10-09T15:07:08.121Z",
+        "documentId": "6,b506a00e4d",
+        "version": 2,
+        "revision": 3,
+        "category": "Contracts",
+        "deletedAt": "2026-10-09T15:07:08.129Z",
+        "updatedAt": "2026-10-09T15:07:08.129Z"
+      }
+    },
+    {
+      "name": "Consistent backup verifies every retained version, including trash",
+      "pass": true,
+      "snapshot": {
+        "operation": "backup",
+        "directory": "evidence/recovery-2026-10-09T15-07-08-028Z/backup",
+        "documents": 167,
+        "retainedVersions": 174,
+        "logicalBytes": 6733,
+        "capturedAt": "2026-10-09T15:07:08.477Z",
+        "elapsedMilliseconds": 1809,
+        "verified": true
+      }
+    },
+    {
+      "name": "Content, metadata and symlink corruption are rejected before restore",
+      "pass": true,
+      "content": {
+        "rejected": true,
+        "reason": "Error: Content checksum mismatch: 1,0ed0749fb8"
+      },
+      "metadata": {
+        "rejected": true,
+        "reason": "Error: Metadata checksum mismatch."
+      },
+      "link": {
+        "rejected": true,
+        "reason": "Error: Backup contents must be regular files."
+      }
+    },
+    {
+      "name": "A restore cannot target the main deployment",
+      "pass": true,
+      "rejected": true,
+      "reason": "Error: Restore requires --in, a separate dodc-document-lab-restore project and a distinct port."
+    },
+    {
+      "name": "A write after the backup is outside its recorded recovery point",
+      "pass": true,
+      "afterBackupDocument": "3,b7e967c51f",
+      "capturedAt": "2026-10-09T15:07:08.477Z",
+      "postBackupWriteAt": "2026-10-09T15:07:10.226Z",
+      "recoveryPointAgeMilliseconds": 1749
+    },
+    {
+      "name": "A separate clean deployment restores metadata and verifies every content hash",
+      "pass": true,
+      "project": "dodc-document-lab-restore-1791558428029",
+      "provisionMilliseconds": 4522,
+      "restoreMilliseconds": 10940,
+      "provisionAndVerifiedRecoveryMilliseconds": 15532,
+      "documents": 167,
+      "retainedVersions": 174
+    },
+    {
+      "name": "Stable identity, revisions, category and trash state survive logical restore",
+      "pass": true,
+      "documentId": "6,b506a00e4d",
+      "versions": 2,
+      "category": "Contracts",
+      "deletedAt": "2026-10-09T15:07:08.129Z"
+    },
+    {
+      "name": "A second restore refuses to replace existing restored documents",
+      "pass": true,
+      "rejected": true,
+      "reason": "Error: Restore target must have an empty document catalogue. Existing documents are never replaced."
+    },
+    {
+      "name": "Restored documents remain usable after API recreation",
+      "pass": true
+    }
+  ],
+  "restoreProject": "dodc-document-lab-restore-1791558428029",
+  "sourceStillIntact": true
+}

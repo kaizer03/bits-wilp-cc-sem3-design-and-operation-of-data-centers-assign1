@@ -1,0 +1,9 @@
+{
+  "performance": "evidence/performance-2026-10-09T15-46-08-463Z/summary.json",
+  "replication": "evidence/replication-2026-10-09T15-15-06-223Z/checks.json",
+  "masters": "evidence/masters-2026-10-09T15-41-57-587Z/checks.json",
+  "monitoring": "evidence/monitoring-2026-10-09T15-29-41-327Z/checks.json",
+  "recovery": "evidence/recovery-2026-10-09T15-07-08-028Z/checks.json",
+  "lifecycleUI": "evidence/lifecycle-browser-2026-10-09T15-36-16-053Z/checks.json",
+  "dashboard": "evidence/monitoring-browser-2026-10-09T15-43-35-779Z/checks.json"
+}

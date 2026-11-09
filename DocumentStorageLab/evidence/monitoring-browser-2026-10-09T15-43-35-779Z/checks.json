@@ -1,0 +1,14 @@
+{
+  "run": "2026-10-09T15-43-35-779Z",
+  "checks": [
+    {
+      "name": "Eight provisioned dashboard panels load in a real browser without script errors",
+      "pass": true
+    },
+    {
+      "name": "Workspace displays the actual API replication policy and requested copy count",
+      "pass": true
+    }
+  ],
+  "pageErrors": []
+}

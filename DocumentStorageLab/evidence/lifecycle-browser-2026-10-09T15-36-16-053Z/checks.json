@@ -1,0 +1,34 @@
+{
+  "run": "2026-10-09T15-36-16-053Z",
+  "checks": [
+    {
+      "name": "Upload category is shown and filtering remains usable",
+      "pass": true
+    },
+    {
+      "name": "New version keeps one document row and adds a content revision",
+      "pass": true
+    },
+    {
+      "name": "Earlier version opens and verifies its original contents",
+      "pass": true
+    },
+    {
+      "name": "Category changes persist in the shared catalogue",
+      "pass": true
+    },
+    {
+      "name": "Trash and restore preserve the current document and version history",
+      "pass": true
+    },
+    {
+      "name": "Server activity survives browser reload",
+      "pass": true
+    },
+    {
+      "name": "Lifecycle details and actions fit a narrow screen",
+      "pass": true
+    }
+  ],
+  "pageErrors": []
+}

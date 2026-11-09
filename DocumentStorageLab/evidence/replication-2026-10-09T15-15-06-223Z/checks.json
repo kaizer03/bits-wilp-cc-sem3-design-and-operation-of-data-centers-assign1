@@ -1,0 +1,298 @@
+{
+  "run": "2026-10-09T15-15-06-223Z",
+  "checks": [
+    {
+      "policy": "000",
+      "name": "Configured policy creates the expected number of matching content copies",
+      "pass": true,
+      "document": {
+        "fid": "5,01f2f48486",
+        "name": "policy-000.bin",
+        "bytes": 262144,
+        "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30",
+        "uploadedAt": "2026-10-09T15:15:17.012Z",
+        "documentId": "5,01f2f48486",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:15:17.012Z"
+      },
+      "originalBytes": 262144,
+      "contentCopies": [
+        {
+          "url": "volume1:8080",
+          "status": 200,
+          "bytes": 262144,
+          "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30"
+        }
+      ],
+      "replicatedPayloadBytes": 262144,
+      "placements": [
+        {
+          "url": "volume1:8080",
+          "rack": "rack1",
+          "dataCenter": "lab"
+        }
+      ],
+      "physicalDiskOverheadNotMeasured": true
+    },
+    {
+      "policy": "000",
+      "name": "Loss of an owning service exposes the policy read/write trade-off",
+      "pass": true,
+      "stopped": "volume1",
+      "existingReadStatus": 503,
+      "newUploadStatus": 201,
+      "recoveryReceiptReturned": false
+    },
+    {
+      "policy": "000",
+      "name": "Restarting the owning service restores the original content",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "policy": "000",
+      "name": "A third service increases configured slots without automatically moving existing content",
+      "pass": true,
+      "beforeSlots": 16,
+      "afterSlots": 24,
+      "originalLocations": [
+        "volume1:8080"
+      ],
+      "afterLocations": [
+        "volume1:8080"
+      ],
+      "dataMovedAutomatically": false
+    },
+    {
+      "policy": "001",
+      "name": "Configured policy creates the expected number of matching content copies",
+      "pass": true,
+      "document": {
+        "fid": "4,017fb494b1",
+        "name": "policy-001.bin",
+        "bytes": 262144,
+        "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30",
+        "uploadedAt": "2026-10-09T15:15:34.080Z",
+        "documentId": "4,017fb494b1",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:15:34.080Z"
+      },
+      "originalBytes": 262144,
+      "contentCopies": [
+        {
+          "url": "volume1:8080",
+          "status": 200,
+          "bytes": 262144,
+          "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30"
+        },
+        {
+          "url": "volume2:8080",
+          "status": 200,
+          "bytes": 262144,
+          "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30"
+        }
+      ],
+      "replicatedPayloadBytes": 524288,
+      "placements": [
+        {
+          "url": "volume1:8080",
+          "rack": "rack1",
+          "dataCenter": "lab"
+        },
+        {
+          "url": "volume2:8080",
+          "rack": "rack1",
+          "dataCenter": "lab"
+        }
+      ],
+      "physicalDiskOverheadNotMeasured": true
+    },
+    {
+      "policy": "001",
+      "name": "Loss of an owning service exposes the policy read/write trade-off",
+      "pass": true,
+      "stopped": "volume1",
+      "existingReadStatus": 200,
+      "newUploadStatus": 503,
+      "recoveryReceiptReturned": false
+    },
+    {
+      "policy": "001",
+      "name": "Restarting the owning service restores the original content",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "policy": "001",
+      "name": "A third service increases configured slots without automatically moving existing content",
+      "pass": true,
+      "beforeSlots": 16,
+      "afterSlots": 24,
+      "originalLocations": [
+        "volume1:8080",
+        "volume2:8080"
+      ],
+      "afterLocations": [
+        "volume2:8080",
+        "volume1:8080"
+      ],
+      "dataMovedAutomatically": false
+    },
+    {
+      "policy": "001",
+      "name": "A third service permits new placement while an old pair has only one reachable copy",
+      "pass": true,
+      "newDocument": {
+        "fid": "8,0219094d0f",
+        "name": "expanded-degraded-001.bin",
+        "bytes": 262144,
+        "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30",
+        "uploadedAt": "2026-10-09T15:15:45.491Z",
+        "documentId": "8,0219094d0f",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:15:45.491Z"
+      },
+      "newLocations": [
+        "volume3:8080",
+        "volume2:8080"
+      ],
+      "oldReadStatus": 200
+    },
+    {
+      "policy": "010",
+      "name": "Configured policy creates the expected number of matching content copies",
+      "pass": true,
+      "document": {
+        "fid": "1,0161736b76",
+        "name": "policy-010.bin",
+        "bytes": 262144,
+        "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30",
+        "uploadedAt": "2026-10-09T15:16:00.656Z",
+        "documentId": "1,0161736b76",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:16:00.656Z"
+      },
+      "originalBytes": 262144,
+      "contentCopies": [
+        {
+          "url": "volume2:8080",
+          "status": 200,
+          "bytes": 262144,
+          "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30"
+        },
+        {
+          "url": "volume1:8080",
+          "status": 200,
+          "bytes": 262144,
+          "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30"
+        }
+      ],
+      "replicatedPayloadBytes": 524288,
+      "placements": [
+        {
+          "url": "volume2:8080",
+          "rack": "rack2",
+          "dataCenter": "lab"
+        },
+        {
+          "url": "volume1:8080",
+          "rack": "rack1",
+          "dataCenter": "lab"
+        }
+      ],
+      "physicalDiskOverheadNotMeasured": true
+    },
+    {
+      "policy": "010",
+      "name": "Loss of an owning service exposes the policy read/write trade-off",
+      "pass": true,
+      "stopped": "volume2",
+      "existingReadStatus": 200,
+      "newUploadStatus": 503,
+      "recoveryReceiptReturned": false
+    },
+    {
+      "policy": "010",
+      "name": "Restarting the owning service restores the original content",
+      "pass": true,
+      "status": 200
+    },
+    {
+      "policy": "010",
+      "name": "A third service increases configured slots without automatically moving existing content",
+      "pass": true,
+      "beforeSlots": 16,
+      "afterSlots": 24,
+      "originalLocations": [
+        "volume1:8080",
+        "volume2:8080"
+      ],
+      "afterLocations": [
+        "volume1:8080",
+        "volume2:8080"
+      ],
+      "dataMovedAutomatically": false
+    },
+    {
+      "policy": "010",
+      "name": "A third service permits new placement while an old pair has only one reachable copy",
+      "pass": true,
+      "newDocument": {
+        "fid": "7,02705694b8",
+        "name": "expanded-degraded-010.bin",
+        "bytes": 262144,
+        "sha256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30",
+        "uploadedAt": "2026-10-09T15:16:10.664Z",
+        "documentId": "7,02705694b8",
+        "version": 1,
+        "revision": 1,
+        "category": "General",
+        "deletedAt": null,
+        "updatedAt": "2026-10-09T15:16:10.664Z"
+      },
+      "newLocations": [
+        "volume3:8080",
+        "volume1:8080"
+      ],
+      "oldReadStatus": 200
+    }
+  ],
+  "policies": [
+    {
+      "policy": "000",
+      "project": "dodc-document-lab-policy-000-1791558906226",
+      "port": "18400"
+    },
+    {
+      "policy": "001",
+      "project": "dodc-document-lab-policy-001-1791558927439",
+      "port": "18401"
+    },
+    {
+      "policy": "010",
+      "project": "dodc-document-lab-policy-010-1791558949821",
+      "port": "18410"
+    }
+  ],
+  "fixtureSHA256": "871e3f7a463d2fe17baaf9289609979734009601ebf61f7929d97f68f7f87d30",
+  "sourceSHA256": {
+    "compose.yaml": "307251578c100f1f658c3bf44ee7f0b10437fb43dc6f57765a541f0492f90173",
+    "app/server.mjs": "e0769e6278fcaa5ce2420b3560fadfb4f519f0a67fc33fc6961250a5baf4bf3c",
+    "app/public/app.js": "ebc93401e89e3da035d1648a71c1cc84b78f14672e1fe636a8bf097ca381932b",
+    "experiments/replication/000.yaml": "66a2b546c2c7f30c964f0dd7311704bcc381c4803abbec608f563f8085d3f257",
+    "experiments/replication/001.yaml": "87124fa6bb521fe7030bea82ef3342b642d0ee1868cf7994282484d58ffdaf51",
+    "experiments/replication/010.yaml": "0429c2f2d0cd72ddb7f7a2b237daf70f0401759b9a603dc47da4838af5f05d93"
+  }
+}

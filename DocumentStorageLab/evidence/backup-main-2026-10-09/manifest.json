@@ -1,0 +1,35 @@
+{
+  "format": "dodc-logical-backup",
+  "version": 1,
+  "createdAt": "2026-10-09T15:11:42.654Z",
+  "capturedAt": "2026-10-09T15:11:42.539Z",
+  "sourceProject": "dodc-document-lab",
+  "metadataSHA256": "4f5ea07d0cecf85158e638c8d355b2b01260abcbae5c22cf6569943f9ff8b3b9",
+  "files": [
+    {
+      "fid": "4,252d5d1d1e",
+      "bytes": 87,
+      "sha256": "22d19dfa5aa69567d0e8e046065c11c9e204723bf5084133a555359be9dd9e40",
+      "path": "contents/22d19dfa5aa69567d0e8e046065c11c9e204723bf5084133a555359be9dd9e40.bin"
+    },
+    {
+      "fid": "6,2689a846b0",
+      "bytes": 677,
+      "sha256": "dc2e241ab5b6957d3917ac1747b656896c7fbb68032338289f44fafe26b2944b",
+      "path": "contents/dc2e241ab5b6957d3917ac1747b656896c7fbb68032338289f44fafe26b2944b.bin"
+    },
+    {
+      "fid": "6,2791a396c3",
+      "bytes": 68,
+      "sha256": "1729158014fbf9fba88c5c0538202bc4f43d7223639440c9a6ee24dcde7ab404",
+      "path": "contents/1729158014fbf9fba88c5c0538202bc4f43d7223639440c9a6ee24dcde7ab404.bin"
+    }
+  ],
+  "excluded": [
+    "database credentials",
+    "users",
+    "sessions",
+    "sign-in budgets",
+    "unindexed storage objects"
+  ]
+}

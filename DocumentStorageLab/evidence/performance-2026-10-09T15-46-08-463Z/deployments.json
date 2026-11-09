@@ -1,0 +1,413 @@
+[
+  {
+    "variant": "single",
+    "project": "dodc-document-lab-perf-single-1791560769021",
+    "port": "18420",
+    "containers": [
+      {
+        "name": "/dodc-document-lab-perf-single-1791560769021-api-1",
+        "service": "api",
+        "image": "dodc-document-lab-test-api:latest",
+        "imageID": "sha256:8b5b9e1643f89783bf628b4ac667a37dd4fd23a153ec0842ea6bf2e14e8a54cd",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-1791560769021-catalogue-1",
+        "service": "catalogue",
+        "image": "mongo:8.3.9",
+        "imageID": "sha256:81a1c8842a09589fc8d5f285266f3340bf4abdf66700ba22988f14cc9b2b3118",
+        "cpus": 0.5,
+        "memoryBytes": 536870912,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-1791560769021-gateway-1",
+        "service": "gateway",
+        "image": "nginx:stable-alpine",
+        "imageID": "sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94",
+        "cpus": 0.25,
+        "memoryBytes": 134217728,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-1791560769021-master-1",
+        "service": "master",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-1791560769021-volume1-1",
+        "service": "volume1",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-1791560769021-volume2-1",
+        "service": "volume2",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      }
+    ],
+    "finalState": [
+      {
+        "service": "api",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "catalogue",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "gateway",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "master",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume1",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume2",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      }
+    ]
+  },
+  {
+    "variant": "two",
+    "project": "dodc-document-lab-perf-two-1791560800299",
+    "port": "18420",
+    "containers": [
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-api-1",
+        "service": "api",
+        "image": "dodc-document-lab-test-api:latest",
+        "imageID": "sha256:8b5b9e1643f89783bf628b4ac667a37dd4fd23a153ec0842ea6bf2e14e8a54cd",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-api2-1",
+        "service": "api2",
+        "image": "dodc-document-lab-test-api:latest",
+        "imageID": "sha256:8b5b9e1643f89783bf628b4ac667a37dd4fd23a153ec0842ea6bf2e14e8a54cd",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-catalogue-1",
+        "service": "catalogue",
+        "image": "mongo:8.3.9",
+        "imageID": "sha256:81a1c8842a09589fc8d5f285266f3340bf4abdf66700ba22988f14cc9b2b3118",
+        "cpus": 0.5,
+        "memoryBytes": 536870912,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-gateway-1",
+        "service": "gateway",
+        "image": "nginx:stable-alpine",
+        "imageID": "sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94",
+        "cpus": 0.25,
+        "memoryBytes": 134217728,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-master-1",
+        "service": "master",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-volume1-1",
+        "service": "volume1",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-two-1791560800299-volume2-1",
+        "service": "volume2",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      }
+    ],
+    "finalState": [
+      {
+        "service": "api",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "api2",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "catalogue",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "gateway",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "master",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume1",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume2",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      }
+    ]
+  },
+  {
+    "variant": "single-wide",
+    "project": "dodc-document-lab-perf-single-wide-1791560825573",
+    "port": "18420",
+    "containers": [
+      {
+        "name": "/dodc-document-lab-perf-single-wide-1791560825573-api-1",
+        "service": "api",
+        "image": "dodc-document-lab-test-api:latest",
+        "imageID": "sha256:8b5b9e1643f89783bf628b4ac667a37dd4fd23a153ec0842ea6bf2e14e8a54cd",
+        "cpus": 1,
+        "memoryBytes": 536870912,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-wide-1791560825573-catalogue-1",
+        "service": "catalogue",
+        "image": "mongo:8.3.9",
+        "imageID": "sha256:81a1c8842a09589fc8d5f285266f3340bf4abdf66700ba22988f14cc9b2b3118",
+        "cpus": 0.5,
+        "memoryBytes": 536870912,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-wide-1791560825573-gateway-1",
+        "service": "gateway",
+        "image": "nginx:stable-alpine",
+        "imageID": "sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94",
+        "cpus": 0.25,
+        "memoryBytes": 134217728,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-wide-1791560825573-master-1",
+        "service": "master",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-wide-1791560825573-volume1-1",
+        "service": "volume1",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-wide-1791560825573-volume2-1",
+        "service": "volume2",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      }
+    ],
+    "finalState": [
+      {
+        "service": "api",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "catalogue",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "gateway",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "master",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume1",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume2",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      }
+    ]
+  },
+  {
+    "variant": "single-tight",
+    "project": "dodc-document-lab-perf-single-tight-1791560847885",
+    "port": "18420",
+    "containers": [
+      {
+        "name": "/dodc-document-lab-perf-single-tight-1791560847885-api-1",
+        "service": "api",
+        "image": "dodc-document-lab-test-api:latest",
+        "imageID": "sha256:8b5b9e1643f89783bf628b4ac667a37dd4fd23a153ec0842ea6bf2e14e8a54cd",
+        "cpus": 0.25,
+        "memoryBytes": 134217728,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-tight-1791560847885-catalogue-1",
+        "service": "catalogue",
+        "image": "mongo:8.3.9",
+        "imageID": "sha256:81a1c8842a09589fc8d5f285266f3340bf4abdf66700ba22988f14cc9b2b3118",
+        "cpus": 0.5,
+        "memoryBytes": 536870912,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-tight-1791560847885-gateway-1",
+        "service": "gateway",
+        "image": "nginx:stable-alpine",
+        "imageID": "sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94",
+        "cpus": 0.25,
+        "memoryBytes": 134217728,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-tight-1791560847885-master-1",
+        "service": "master",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-tight-1791560847885-volume1-1",
+        "service": "volume1",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      },
+      {
+        "name": "/dodc-document-lab-perf-single-tight-1791560847885-volume2-1",
+        "service": "volume2",
+        "image": "chrislusf/seaweedfs:4.48",
+        "imageID": "sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d",
+        "cpus": 0.5,
+        "memoryBytes": 268435456,
+        "restarts": 0
+      }
+    ],
+    "finalState": [
+      {
+        "service": "api",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "catalogue",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "gateway",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "master",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume1",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      },
+      {
+        "service": "volume2",
+        "oomKilled": false,
+        "restarts": 0,
+        "status": "running"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "format": "dodc-document-receipts",
+  "version": 1,
+  "exportedAt": "2026-10-07T22:45:07.135Z",
+  "receipts": [
+    {
+      "fid": "6,2791a396c3",
+      "name": "sample-image.png",
+      "bytes": 68,
+      "sha256": "1729158014fbf9fba88c5c0538202bc4f43d7223639440c9a6ee24dcde7ab404",
+      "uploadedAt": "2026-10-07T22:45:06.510Z"
+    },
+    {
+      "fid": "6,2689a846b0",
+      "name": "sample-invoice.pdf",
+      "bytes": 677,
+      "sha256": "dc2e241ab5b6957d3917ac1747b656896c7fbb68032338289f44fafe26b2944b",
+      "uploadedAt": "2026-10-07T22:45:06.505Z"
+    },
+    {
+      "fid": "4,252d5d1d1e",
+      "name": "sample-invoice.txt",
+      "bytes": 87,
+      "sha256": "22d19dfa5aa69567d0e8e046065c11c9e204723bf5084133a555359be9dd9e40",
+      "uploadedAt": "2026-10-07T22:45:06.497Z"
+    }
+  ]
+}
