@@ -143,14 +143,51 @@ def equation(parts):
 def link(label,url,display=None):
     para=p(label+' ');el=OxmlElement('w:hyperlink');el.set(qn('r:id'),para.part.relate_to(url,'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink',is_external=True))
     r=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'245A81');pr.append(color);r.append(pr);t=OxmlElement('w:t');t.text=display or url;r.append(t);el.append(r);para._p.append(el)
-# CONTENT BELOW
-p('BITS Pilani\nWork Integrated Learning Programmes Division').alignment=WD_ALIGN_PARAGRAPH.CENTER
-p('Design and Operation of Data Centers\nCC ZG508').alignment=WD_ALIGN_PARAGRAPH.CENTER
-p();title=p('Software Defined Infrastructure and Replicated Document Management','Title');title.alignment=WD_ALIGN_PARAGRAPH.CENTER
-p('Laboratory experiment covering Topics 7 and 10').alignment=WD_ALIGN_PARAGRAPH.CENTER
-p();p('Student name  Moulik Patra')
-link('Source repository','https://github.com/kaizer03/bits-wilp-cc-sem3-design-and-operation-of-data-centers-assign1','Document Storage Lab on GitHub')
-p('Experiment date  9 October 2026');p('Upload deadline  10 November 2026')
+REPOSITORY='https://github.com/kaizer03/bits-wilp-cc-sem3-design-and-operation-of-data-centers-assign1'
+
+def format_cover(add, bits_id=None):
+    def centered(text, size=None, bold=False, before=0, after=0, style='Normal'):
+        para=add(text, style)
+        para.alignment=WD_ALIGN_PARAGRAPH.CENTER
+        para.paragraph_format.space_before=Pt(before)
+        para.paragraph_format.space_after=Pt(after)
+        for run in para.runs:
+            if size is not None: run.font.size=Pt(size)
+            run.bold=bold
+        return para
+
+    def detail(label, value, url=None, after=6):
+        para=add('', 'Normal')
+        fmt=para.paragraph_format
+        fmt.left_indent=Inches(1.18)
+        fmt.tab_stops.add_tab_stop(Inches(2.52))
+        fmt.space_after=Pt(after)
+        para.add_run(label + ':').bold=True
+        para.add_run('\t')
+        if url is None:
+            para.add_run(value)
+        else:
+            hyperlink=OxmlElement('w:hyperlink')
+            hyperlink.set(qn('r:id'),para.part.relate_to(url,'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink',is_external=True))
+            run=OxmlElement('w:r'); props=OxmlElement('w:rPr')
+            color=OxmlElement('w:color'); color.set(qn('w:val'),'245A81'); props.append(color)
+            underline=OxmlElement('w:u'); underline.set(qn('w:val'),'single'); props.append(underline)
+            run.append(props)
+            text=OxmlElement('w:t'); text.text=value; run.append(text)
+            hyperlink.append(run); para._p.append(hyperlink)
+
+    centered('BITS Pilani',15,True,0,4)
+    centered('Work Integrated Learning Programmes Division',11,False,0,17)
+    centered('Design and Operation of Data Centers',12,False,0,3)
+    centered('CC ZG508',11,True,0,0)
+    centered('Software Defined Infrastructure and Replicated Document Management',22,True,27,10,'Title')
+    centered('Assignment 1   |   Lab Experiment on Topics 7 and 10',11,False,0,26)
+    detail('Student name','Moulik Patra')
+    if bits_id is not None:
+        detail('BITS ID',bits_id)
+    detail('Repository','Document Storage Lab on GitHub',REPOSITORY,26)
+
+format_cover(p)
 h('Abstract')
 p('I used a small document library to study how a service behaves when its application processes, catalogue and file storage can fail separately. Two Express instances sit behind Nginx and share a MongoDB catalogue and session store. SeaweedFS holds the file bytes. Docker Compose specifies the networks, volumes and resource limits, so the same workload can run against different configurations.')
 p('Stopping one storage service left existing two-copy files readable, but fresh uploads could not satisfy the requested policy. The restore drill recovered 174 versions and verified every restored hash. The benchmark completed 5,760 measured requests without errors. At 1 MiB and concurrency eight, a single full-core API had lower p95 latency than two half-core APIs. These were short runs on one laptop; I use them to compare configurations, not to size a production service.')
