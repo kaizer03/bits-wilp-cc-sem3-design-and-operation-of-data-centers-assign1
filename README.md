@@ -1,8 +1,5 @@
 # Document Storage Lab
 
-A local document library for the Design and Operation of Data Centers lab. The application keeps its catalogue in MongoDB and stores file contents in SeaweedFS. The lab examines service placement, replication, recovery and resource limits using one laptop.
+CC ZG508, Assignment 1: software defined infrastructure and storage. The lab uses MongoDB for the catalogue and SeaweedFS for replicated file storage.
 
-- [Lab report](DODC%20Assignment%20Topics%207%20and%2010.docx)
-- [Installation and experiment notes](DocumentStorageLab/README.md)
-- [Application guide](DocumentStorageLab/Application%20Guide.md)
-- [Recorded results](DocumentStorageLab/evidence/index.json)
+[Report](DODC%20Assignment%20Topics%207%20and%2010.docx) · [Run the lab](DocumentStorageLab/README.md) · [Results](DocumentStorageLab/evidence/index.json)

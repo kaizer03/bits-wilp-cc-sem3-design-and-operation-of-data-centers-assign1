@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "name": "Empty catalogue on first boot",
+      "pass": true
+    },
+    {
+      "name": "Three fixture uploads with viewer downloads and matching SHA-256 hashes",
+      "pass": true
+    },
+    {
+      "name": "Second version, viewer write rejection, trash and restore",
+      "pass": true
+    },
+    {
+      "name": "PDF canvas with verified invoice text",
+      "pass": true
+    },
+    {
+      "name": "Mobile viewer catalogue fits the viewport",
+      "pass": true
+    }
+  ]
+}

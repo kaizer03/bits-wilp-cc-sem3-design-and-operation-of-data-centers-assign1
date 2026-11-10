@@ -1,7 +1,7 @@
 {
   "reportInputs": "report/evidence-selection.json",
-  "reportSHA256": "4cde8ef2144e92f57d282ffe64b22fb862639227418c0ca8c4357798b01bd3ab",
-  "deploymentCheck": "evidence/deployment-main-2026-11-09T16-00-55-498Z/deployment-check.json",
+  "reportSHA256": "31a45efafedfc53456d68127880257b72f51c9d17b171a749d8f2b8c135bcc0d",
+  "deploymentCheck": "evidence/deployment-main-2026-11-10T11-42-36-927Z/deployment-check.json",
   "runs": [
     {
       "directory": "evidence/access-2026-10-09T15-33-22-921Z",
@@ -75,6 +75,13 @@
       "passedGroups": 8
     },
     {
+      "directory": "evidence/clean-install-2026-11-10",
+      "files": [
+        "checks.json"
+      ],
+      "passedGroups": 5
+    },
+    {
       "directory": "evidence/deployment-main-2026-10-09T16-12-26-327Z",
       "files": [
         "deployment-check.json"
@@ -88,6 +95,12 @@
     },
     {
       "directory": "evidence/deployment-main-2026-11-09T16-00-55-498Z",
+      "files": [
+        "deployment-check.json"
+      ]
+    },
+    {
+      "directory": "evidence/deployment-main-2026-11-10T11-42-36-927Z",
       "files": [
         "deployment-check.json"
       ]
@@ -325,7 +338,6 @@
     }
   ],
   "notes": [
-    "October results and screenshots record the original experiments. The November checks cover the revised interface and dependency lockfile.",
-    "Local filesystem prefixes were removed from published evidence paths."
+    "October runs supplied the experiment measurements. November runs check the updated library and a fresh installation."
   ]
 }

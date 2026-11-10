@@ -140,15 +140,16 @@ def equation(parts):
         r=OxmlElement('m:r');t=OxmlElement('m:t');t.text=text;r.append(t);mathnode.append(r)
     para._p.append(mathnode)
 
-def link(label,url):
+def link(label,url,display=None):
     para=p(label+' ');el=OxmlElement('w:hyperlink');el.set(qn('r:id'),para.part.relate_to(url,'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink',is_external=True))
-    r=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'245A81');pr.append(color);r.append(pr);t=OxmlElement('w:t');t.text=url;r.append(t);el.append(r);para._p.append(el)
+    r=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'245A81');pr.append(color);r.append(pr);t=OxmlElement('w:t');t.text=display or url;r.append(t);el.append(r);para._p.append(el)
 # CONTENT BELOW
 p('BITS Pilani\nWork Integrated Learning Programmes Division').alignment=WD_ALIGN_PARAGRAPH.CENTER
 p('Design and Operation of Data Centers\nCC ZG508').alignment=WD_ALIGN_PARAGRAPH.CENTER
 p();title=p('Software Defined Infrastructure and Replicated Document Management','Title');title.alignment=WD_ALIGN_PARAGRAPH.CENTER
 p('Laboratory experiment covering Topics 7 and 10').alignment=WD_ALIGN_PARAGRAPH.CENTER
-p();p('Student name  __________________________________');p('BITS ID  ________________________________________')
+p();p('Student name  Moulik Patra')
+link('Source repository','https://github.com/kaizer03/bits-wilp-cc-sem3-design-and-operation-of-data-centers-assign1','Document Storage Lab on GitHub')
 p('Experiment date  9 October 2026');p('Upload deadline  10 November 2026')
 h('Abstract')
 p('I used a small document library to study how a service behaves when its application processes, catalogue and file storage can fail separately. Two Express instances sit behind Nginx and share a MongoDB catalogue and session store. SeaweedFS holds the file bytes. Docker Compose specifies the networks, volumes and resource limits, so the same workload can run against different configurations.')
@@ -215,7 +216,7 @@ p('Size and hash checks cover imports, reads, previews and restored versions. Th
 page('Test setup and evidence')
 p('Failure tests ran away from the main library. The recovery, replication, benchmark and master projects used separate named volumes. The runners stopped their test services afterwards and left their volumes available for inspection.')
 table(['Experiment','Variable or intervention','Observation'],[('Shared catalogue and lifecycle','Two clients, invalid imports, stale/concurrent revisions, recreation','Shared visibility, atomicity, conflicts and retained versions.'),('Access','Anonymous/viewer/editor requests, origin, expiry, revocation','Server enforcement and shared session state.'),('API availability','Stop/recreate API, database, master or volumes','Liveness/readiness, actual reads/writes, errors and recovery.'),('Backup and restore','Snapshot, corruption, post-snapshot write, clean target','Retained metadata/content, rejected unsafe targets and time.'),('Replication and expansion','000, 001, 010; one owner down; add third service','Actual copy hashes, rack labels and allocation slots.'),('Monitoring','Traffic and sustained component failures','Metrics, local alert firing and resolution.'),('Performance','Resources, API count, payload size and concurrency','Repeated response distributions, throughput and resources.'),('Three masters','Leader loss and two unreachable peers','Leader observation, existing reads and fresh allocation.')],[1.55,2.45,2.9])
-p('The evidence includes the checks, source fingerprints, runtime settings and raw samples. Two master runs are included because they gave different results for writes after majority loss. The browser screenshots are from the October runs.')
+p('The evidence includes test results, deployment settings and raw timings. Both master runs are included because writes after majority loss gave different results.')
 p('All workloads used sample data. The processes shared the laptop, Docker VM and disk. The fault tests stopped services and did not interrupt a physical rack, link or site. Request times are local to this setup.')
 
 page('Application availability results')
@@ -306,19 +307,16 @@ table(['Limitation','Consequence','Next design step'],[('One laptop and Docker V
 p('The API buffers files up to 5 MiB. To handle larger files or higher concurrency, I would add streaming and measure how it affects memory and request time. The prototype has no malware scanning, encryption-at-rest design or independent disaster recovery.')
 p('For a larger rollout I would first set the recovery and latency targets, then place replicas and backups in independent failure domains. The laptop timings are a baseline for comparison, not a production SLA.')
 
-page('Reproducing the lab')
-h('Test workload')
-p('The application checks use a sample invoice and its revised version. They cover upload, category changes, both version downloads, trash and restore, plus a rejected viewer write.')
-p('The fault and recovery runners use separate Compose projects. They record status, file hashes and service state while an API, database or storage service is stopped and again after recovery.')
-p('The replication, recovery and performance directories contain the data needed to compare the configurations without repeating a fault against the main library.')
-h('Local commands')
-code('node scripts/prepare-local.mjs\ndocker compose up -d --build\nnode scripts/backup-local.mjs backup \\\n  --project dodc-document-lab --port 18380 --out NEW_DIRECTORY\nnode scripts/backup-local.mjs verify --in BACKUP_DIRECTORY')
-p('Run these commands from DocumentStorageLab. The README describes the demo accounts and how to restore into a separate empty project. Integration runners are in tests, with Compose overrides in experiments.')
-p('Each installation generates its own local database credentials. The archive contains source, sample documents and recorded results; it does not contain the running database or its credentials.')
+page('Running the lab')
+p('From DocumentStorageLab, prepare the local credentials and start the services. Open http://127.0.0.1:18380 and sign in as editor using the demo account in the README.')
+p('node scripts/prepare-local.mjs')
+p('docker compose up -d --build')
+picture(ART/'submission-preview.png','Figure 6  Verified invoice preview after a fresh install on 10 November 2026',width=6.25)
+p('The fresh install started with an empty catalogue. I checked uploads and downloads with the sample files, added a second version, and verified that trash and restore kept both versions. The viewer could read the files but could not change them.')
 
 page('Evidence and findings')
 table(['Experiment','Passed groups','Evidence directory'],[(name,len(data['checks']),str(file.parent.relative_to(LAB))) for name,file,data in EVIDENCE],[1.25,.8,4.85])
-p('The October browser runs cover both roles, catalogue sharing, version history, trash, mobile layouts and verified previews. Deployment checks compare the served source files and read the three original samples through the shared catalogue.')
+p('The browser runs cover both roles, version history, trash and file previews. The clean-install check repeated those basics from the submission package.')
 p('The performance directory contains the environment, deployment limits, resource samples and raw timings behind the tables. The master section draws on two runs because the existing-placement write returned different results.')
 h('Conclusion')
 p('The main storage result was that existing reads and fresh writes failed under different conditions. A surviving copy could serve an existing file even when another upload could not meet the placement policy. Adding a third service changed future placement without moving the files already stored.')
