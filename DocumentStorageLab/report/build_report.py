@@ -91,13 +91,14 @@ for name,size in [('Normal',11.5),('Title',23),('Heading 1',16),('Heading 2',12.
         if a.endswith('Theme'):del rf.attrib[a]
     for a in ['ascii','hAnsi','eastAsia','cs']:rf.set(qn('w:'+a),'Times New Roman')
     for border in st.element.findall('.//'+qn('w:pBdr')):border.getparent().remove(border)
-D.core_properties.title='Software Defined Infrastructure and Replicated Document Management';D.core_properties.author='';D.core_properties.subject='CC ZG508 Topics 7 and 10'
+D.core_properties.title='Software Defined Infrastructure and Replicated Document Management';D.core_properties.author='';D.core_properties.subject='CCZG508 Topics 7 and 10'
 footer=s.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.CENTER
 field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');footer._p.append(field)
 def p(text='',style=None):return D.add_paragraph(text,style)
 def h(text):return D.add_heading(text,2)
 def page(title):
-    heading=D.add_heading(title,1);heading.paragraph_format.page_break_before=True
+    number = 1 + sum(para.style.name == 'Heading 1' for para in D.paragraphs)
+    heading=D.add_heading(f'{number}. {title}',1);heading.paragraph_format.page_break_before=True
     return heading
 
 def table(headers,rows,widths):
@@ -145,57 +146,67 @@ def link(label,url,display=None):
     r=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'245A81');pr.append(color);r.append(pr);t=OxmlElement('w:t');t.text=display or url;r.append(t);el.append(r);para._p.append(el)
 REPOSITORY='https://github.com/kaizer03/bits-wilp-cc-sem3-design-and-operation-of-data-centers-assign1'
 
-def format_cover(add, bits_id=None):
-    def centered(text, size=None, bold=False, before=0, after=0, style='Normal'):
-        para=add(text, style)
-        para.alignment=WD_ALIGN_PARAGRAPH.CENTER
-        para.paragraph_format.space_before=Pt(before)
-        para.paragraph_format.space_after=Pt(after)
-        for run in para.runs:
-            if size is not None: run.font.size=Pt(size)
-            run.bold=bold
-        return para
+def format_cover(add, number, title, primary, related, repository_label, repository_url, bits_id=None):
+    def centered(text, size, bold=False, before=0, after=0, style='Normal'):
+        para = add(text, style)
+        para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        para.paragraph_format.space_before = Pt(before)
+        para.paragraph_format.space_after = Pt(after)
+        para.paragraph_format.line_spacing = 1.1
+        para.runs[0].font.size = Pt(size)
+        para.runs[0].bold = bold
 
-    def detail(label, value, url=None, after=6):
-        para=add('', 'Normal')
-        fmt=para.paragraph_format
-        fmt.left_indent=Inches(1.18)
-        fmt.tab_stops.add_tab_stop(Inches(2.52))
-        fmt.space_after=Pt(after)
-        para.add_run(label + ':').bold=True
+    def detail(label, value, url=None, after=5):
+        para = add('', 'Normal')
+        fmt = para.paragraph_format
+        fmt.left_indent = Inches(1)
+        fmt.tab_stops.add_tab_stop(Inches(2.25))
+        fmt.space_after = Pt(after)
+        para.add_run(label + ':').bold = True
         para.add_run('\t')
         if url is None:
             para.add_run(value)
-        else:
-            hyperlink=OxmlElement('w:hyperlink')
-            hyperlink.set(qn('r:id'),para.part.relate_to(url,'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink',is_external=True))
-            run=OxmlElement('w:r'); props=OxmlElement('w:rPr')
-            color=OxmlElement('w:color'); color.set(qn('w:val'),'245A81'); props.append(color)
-            underline=OxmlElement('w:u'); underline.set(qn('w:val'),'single'); props.append(underline)
-            run.append(props)
-            text=OxmlElement('w:t'); text.text=value; run.append(text)
-            hyperlink.append(run); para._p.append(hyperlink)
+            return
+        hyperlink = OxmlElement('w:hyperlink')
+        hyperlink.set(qn('r:id'), para.part.relate_to(
+            url, 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink',
+            is_external=True,
+        ))
+        run = OxmlElement('w:r')
+        properties = OxmlElement('w:rPr')
+        color = OxmlElement('w:color')
+        color.set(qn('w:val'), '245A81')
+        underline = OxmlElement('w:u')
+        underline.set(qn('w:val'), 'single')
+        properties.extend([color, underline])
+        text = OxmlElement('w:t')
+        text.text = value
+        run.extend([properties, text])
+        hyperlink.append(run)
+        para._p.append(hyperlink)
 
-    centered('BITS Pilani',15,True,0,4)
-    centered('Work Integrated Learning Programmes Division',11,False,0,17)
-    centered('Design and Operation of Data Centers',12,False,0,3)
-    centered('CC ZG508',11,True,0,0)
-    centered('Software Defined Infrastructure and Replicated Document Management',22,True,27,10,'Title')
-    centered('Assignment 1   |   Lab Experiment on Topics 7 and 10',11,False,0,26)
-    detail('Student name','Moulik Patra')
-    if bits_id is not None:
-        detail('BITS ID',bits_id)
-    detail('Repository','Document Storage Lab on GitHub',REPOSITORY,26)
+    centered('BITS Pilani', 16, True, after=4)
+    centered('Work Integrated Learning Programmes Division', 11, after=15)
+    centered('Design and Operation of Data Centers', 12, after=3)
+    centered('CCZG508', 11, True)
+    centered(title, 22, True, before=22, after=9, style='Title')
+    centered(f'Assignment {number}  |  Lab Experiment', 11, after=19)
+    detail('Student name', 'Moulik Patra')
+    if bits_id:
+        detail('BITS ID', bits_id)
+    detail('Primary topic', primary)
+    detail('Related topic', related)
+    detail('Repository', repository_label, repository_url, after=20)
 
-format_cover(p)
+format_cover(p, 1, 'Software Defined Infrastructure\nand Replicated Document Management', 'Topic 7 · Software defined data infrastructure', 'Topic 10 · Software defined storage', 'Document Storage Lab on GitHub', 'https://github.com/kaizer03/bits-wilp-cc-sem3-design-and-operation-of-data-centers-assign1')
 h('Abstract')
 p('I used a small document library to study how a service behaves when its application processes, catalogue and file storage can fail separately. Two Express instances sit behind Nginx and share a MongoDB catalogue and session store. SeaweedFS holds the file bytes. Docker Compose specifies the networks, volumes and resource limits, so the same workload can run against different configurations.')
 p('Stopping one storage service left existing two-copy files readable, but fresh uploads could not satisfy the requested policy. The restore drill recovered 174 versions and verified every restored hash. The benchmark completed 5,760 measured requests without errors. At 1 MiB and concurrency eight, a single full-core API had lower p95 latency than two half-core APIs. These were short runs on one laptop; I use them to compare configurations, not to size a production service.')
 
-page('Workload and scope')
+page('Objective and scope')
 p('A small office needs one place to keep invoices, contracts and internal documents. People should be able to find an older version or restore a document moved to trash. Keeping the index in a browser would give each user a different list. Keeping file bytes inside an API container would make replacement risky. I kept both kinds of data outside the API processes.')
 table(['Topic','Question investigated'],[('7  Software Defined Data Infrastructure design and deployment considerations','How can configuration define compute resources, networking, persistence, access and operations while allowing application replacement?'),('10  Software Defined Storage platforms used in modern enterprise clouds','How do programmable storage policies affect content placement, failure behaviour, expansion and recovery?')],[2.7,4.2])
-p('Topic 7 covers deployment, resource allocation and service recovery. Topic 10 covers replica placement and how that placement affects reads and writes during a fault. The same library provides the workload for both parts [1].')
+p('Topic 7 is the primary topic and covers deployment, resource allocation and service recovery. Topic 10 covers software defined storage, including replica placement and its effect on reads and writes during a fault. Both parts use the same document library as the workload [1].')
 h('Functional requirements')
 p('Editors can upload, categorise, revise, trash and restore documents. Viewers can browse history, preview or download a file, and export receipts. Everyone sees the same catalogue. Text, images and PDFs are previewed after a byte-count and SHA-256 check. A batch accepts up to ten nonempty files of at most 5 MiB each.')
 h('Operational requirements')
